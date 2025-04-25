@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": "CUSTOM:ClothFabric"
+      },
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": "CUSTOM:ClothFabric"
+      },
+      {
+        "value": "CUSTOM:ClothFabric"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:ClothFabric"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Ratcatcherrobes.body"
+    },
+    "name": "ratcatcherchestcraft",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lowlands_clothing:herbs_fiber"
+    },
+    {
+      "item": "lowlands_clothing:herbs_fiber"
+    },
+    {
+      "item": "lowlands_clothing:herbs_fiber"
+    },
+    {
+      "item": "lowlands_clothing:herbs_fiber"
+    }
+  ],
+  "result": {
+    "item": "lowlands_clothing:cloth_fabric",
+    "count": 1
+  }
+}

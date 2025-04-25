@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lowlands_clothing:block/null",
+    "up": "lowlands_clothing:block/null",
+    "north": "lowlands_clothing:block/null",
+    "east": "lowlands_clothing:block/null",
+    "south": "lowlands_clothing:block/null",
+    "west": "lowlands_clothing:block/null",
+    "particle": "lowlands_clothing:block/null"
+  },
+  "render_type": "translucent"
+}

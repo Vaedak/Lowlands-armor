@@ -1,0 +1,115 @@
+{
+  "_fv": 69,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "leather_cap",
+    "enableBody": true,
+    "textureBody": "penitant_shirt",
+    "enableLeggings": true,
+    "textureLeggings": "penitant_lower",
+    "enableBoots": true,
+    "textureBoots": "penitant_sandals",
+    "onBodyTick": {
+      "name": "PenitentRagstickupdate"
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "penitant",
+    "helmetName": "Penitent Cap",
+    "bodyName": "Penitent Shirt",
+    "leggingsName": "Penitent Underpants",
+    "bootsName": "Penitent Sandals",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "When the full armor is equiped and under 5hp grants Speed and Strengh ."
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "When the full armor is equiped and under 5hp grants Speed and Strengh ."
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "When the full armor is equiped and under 5hp grants Speed and Strengh ."
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "When the full armor is equiped and under 5hp grants Speed and Strengh ."
+      ]
+    },
+    "helmetModelName": "ModelPenitant_Outfit",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelPenitant_Outfit",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "ModelPenitant_Outfit",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "ModelPenitant_Outfit",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 10,
+    "damageValueHelmet": 1,
+    "damageValueBody": 1,
+    "damageValueLeggings": 1,
+    "damageValueBoots": 1,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "block.cloth.hit"
+    },
+    "repairItems": [
+      {
+        "value": "Items.LEATHER"
+      }
+    ]
+  }
+}

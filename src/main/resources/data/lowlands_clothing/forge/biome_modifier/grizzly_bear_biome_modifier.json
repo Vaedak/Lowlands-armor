@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "snowy_taiga",
+    "taiga",
+    "dark_forest"
+  ],
+  "spawners": {
+    "type": "lowlands_clothing:grizzly_bear",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}
