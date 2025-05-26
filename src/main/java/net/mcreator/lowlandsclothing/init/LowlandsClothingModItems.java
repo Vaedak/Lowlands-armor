@@ -13,11 +13,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.lowlandsclothing.item.WingedcavaleryarmorItem;
 import net.mcreator.lowlandsclothing.item.TreatedleatherItem;
 import net.mcreator.lowlandsclothing.item.SnowtigerarmorItem;
 import net.mcreator.lowlandsclothing.item.RatcatcherrobesItem;
 import net.mcreator.lowlandsclothing.item.PlagueDoctorSuitItem;
 import net.mcreator.lowlandsclothing.item.PenitentRagsItem;
+import net.mcreator.lowlandsclothing.item.NorsianArmorItem;
 import net.mcreator.lowlandsclothing.item.MountainmenclothesItem;
 import net.mcreator.lowlandsclothing.item.MercenarySwordmanItem;
 import net.mcreator.lowlandsclothing.item.HighlandslongkiltItem;
@@ -28,6 +30,8 @@ import net.mcreator.lowlandsclothing.item.FurpeltItem;
 import net.mcreator.lowlandsclothing.item.FurnacemasteramorItem;
 import net.mcreator.lowlandsclothing.item.ExecutorarmorItem;
 import net.mcreator.lowlandsclothing.item.ClothFabricItem;
+import net.mcreator.lowlandsclothing.item.AxolotlironItem;
+import net.mcreator.lowlandsclothing.item.AxolotlArmorItem;
 import net.mcreator.lowlandsclothing.LowlandsClothingMod;
 
 public class LowlandsClothingModItems {
@@ -78,6 +82,19 @@ public class LowlandsClothingModItems {
 	public static final RegistryObject<Item> HERBS_FIBER = REGISTRY.register("herbs_fiber", () -> new HerbsFiberItem());
 	public static final RegistryObject<Item> HERBS_WHIP = REGISTRY.register("herbs_whip", () -> new HerbsWhipItem());
 	public static final RegistryObject<Item> TREATEDLEATHER = REGISTRY.register("treatedleather", () -> new TreatedleatherItem());
+	public static final RegistryObject<Item> WINGEDCAVALERYARMOR_HELMET = REGISTRY.register("wingedcavaleryarmor_helmet", () -> new WingedcavaleryarmorItem.Helmet());
+	public static final RegistryObject<Item> WINGEDCAVALERYARMOR_CHESTPLATE = REGISTRY.register("wingedcavaleryarmor_chestplate", () -> new WingedcavaleryarmorItem.Chestplate());
+	public static final RegistryObject<Item> WINGEDCAVALERYARMOR_LEGGINGS = REGISTRY.register("wingedcavaleryarmor_leggings", () -> new WingedcavaleryarmorItem.Leggings());
+	public static final RegistryObject<Item> WINGEDCAVALERYARMOR_BOOTS = REGISTRY.register("wingedcavaleryarmor_boots", () -> new WingedcavaleryarmorItem.Boots());
+	public static final RegistryObject<Item> AXOLOTL_ARMOR_HELMET = REGISTRY.register("axolotl_armor_helmet", () -> new AxolotlArmorItem.Helmet());
+	public static final RegistryObject<Item> AXOLOTL_ARMOR_CHESTPLATE = REGISTRY.register("axolotl_armor_chestplate", () -> new AxolotlArmorItem.Chestplate());
+	public static final RegistryObject<Item> AXOLOTL_ARMOR_LEGGINGS = REGISTRY.register("axolotl_armor_leggings", () -> new AxolotlArmorItem.Leggings());
+	public static final RegistryObject<Item> AXOLOTL_ARMOR_BOOTS = REGISTRY.register("axolotl_armor_boots", () -> new AxolotlArmorItem.Boots());
+	public static final RegistryObject<Item> NORSIAN_ARMOR_HELMET = REGISTRY.register("norsian_armor_helmet", () -> new NorsianArmorItem.Helmet());
+	public static final RegistryObject<Item> NORSIAN_ARMOR_CHESTPLATE = REGISTRY.register("norsian_armor_chestplate", () -> new NorsianArmorItem.Chestplate());
+	public static final RegistryObject<Item> NORSIAN_ARMOR_LEGGINGS = REGISTRY.register("norsian_armor_leggings", () -> new NorsianArmorItem.Leggings());
+	public static final RegistryObject<Item> NORSIAN_ARMOR_BOOTS = REGISTRY.register("norsian_armor_boots", () -> new NorsianArmorItem.Boots());
+	public static final RegistryObject<Item> AXOLOTLIRON = REGISTRY.register("axolotliron", () -> new AxolotlironItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

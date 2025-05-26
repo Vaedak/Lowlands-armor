@@ -1,0 +1,109 @@
+{
+  "_fv": 69,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "axolotl_helmet",
+    "enableBody": true,
+    "textureBody": "axolotl_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "axolotl_leggings",
+    "enableBoots": true,
+    "textureBoots": "axolotl_boots",
+    "onBodyTick": {
+      "name": "Axolotlarmorwearingeffect"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ArmorsoftheLowlands"
+      }
+    ],
+    "armorTextureFile": "axolotl_knight",
+    "helmetName": "Axolotl Knight Helmet",
+    "bodyName": "Axolotl Knight Chestplate",
+    "leggingsName": "Axolotl Knight Pants",
+    "bootsName": "Axolotl Knight Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Gives Dolphing Grace, Regeneration and Water breating when full armor is equiped and near Axolotl . "
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelaxolotl_armor",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelaxolotl_armor",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Modelaxolotl_armor",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modelaxolotl_armor",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
+    "damageValueBoots": 2,
+    "enchantability": 12,
+    "toughness": 0.1,
+    "knockbackResistance": 0.4,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

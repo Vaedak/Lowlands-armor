@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.GOAT_HORN"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GOAT_HORN"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NorsianArmor.helmet"
+    },
+    "name": "norsianhelmetcraft",
+    "namespace": "mod"
+  }
+}

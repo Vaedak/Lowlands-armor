@@ -15,7 +15,7 @@
     },
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "snowtigerarmor",
@@ -37,19 +37,19 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "Modelsnowtigerarmor",
+    "helmetModelName": "Modelsnowtigerarmorv01",
     "helmetModelPart": "Head",
     "helmetModelTexture": "From armor",
-    "bodyModelName": "Modelsnowtigerarmor",
+    "bodyModelName": "Modelsnowtigerarmorv01",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
     "bodyModelTexture": "From armor",
-    "leggingsModelName": "Modelsnowtigerarmor",
+    "leggingsModelName": "Modelsnowtigerarmorv01",
     "leggingsModelPartL": "LeftLeg",
     "leggingsModelPartR": "RightLeg",
     "leggingsModelTexture": "From armor",
-    "bootsModelName": "Modelsnowtigerarmor",
+    "bootsModelName": "Modelsnowtigerarmorv01",
     "bootsModelPartL": "LeftLeg",
     "bootsModelPartR": "RightLeg",
     "bootsModelTexture": "From armor",
@@ -92,7 +92,7 @@
     "maxDamage": 35,
     "damageValueHelmet": 3,
     "damageValueBody": 7,
-    "damageValueLeggings": 5,
+    "damageValueLeggings": 6,
     "damageValueBoots": 3,
     "enchantability": 9,
     "toughness": 3.0,

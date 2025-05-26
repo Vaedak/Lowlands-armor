@@ -975,6 +975,298 @@
         ]
       },
       "path": "~/crafts"
+    },
+    {
+      "name": "Wingedcavaleryarmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingedcavaleryarmor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_helmet.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/WingedcavaleryarmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "AxolotlArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotl_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/AxolotlArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_boots.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "NorsianArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "norsian_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_leggings.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/NorsianArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "ArmorsoftheLowlands",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armorsofthe_lowlands",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Axolotliron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotliron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotliron.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/AxolotlironItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Axolotlironcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotlironcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/axolotlironcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Axolotlknighthelmet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotlknighthelmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/axolotlknighthelmet.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Axolotlknightchestplate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotlknightchestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/axolotlknightchestplate.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Axolotlknightleggings",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotlknightleggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/axolotlknightleggings.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Axolotlknightboots",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotlknightboots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/axolotlknightboots.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Wingedcavaleryhelmetcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingedcavaleryhelmetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/wingedcavaleryhelmetcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Wingedcavalerychestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingedcavalerychestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/wingedcavalerychestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Wingedcavaleryleggingscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingedcavaleryleggingscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/wingedcavaleryleggingscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Wingedcavalerybootscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingedcavalerybootscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/wingedcavalerybootscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Norsianhelmetcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "norsianhelmetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/norsianhelmetcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Norsianchestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "norsianchestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/norsianchestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Norsianarmorleggingscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "norsianarmorleggingscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/norsianarmorleggingscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Norsianbootscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "norsianbootscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/norsianbootscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Wingedcavaleryfullarmortickevent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingedcavaleryfullarmortickevent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/WingedcavaleryfullarmortickeventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Axolotlarmorwearingeffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotlarmorwearingeffect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/AxolotlarmorwearingeffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -995,52 +1287,66 @@
   "language_map": {
     "en_us": {
       "item.lowlands_clothing.executorarmor_leggings": "Executioner Leggings",
+      "item.lowlands_clothing.wingedcavaleryarmor_boots": "Winged Cavalery Boots",
       "item.lowlands_clothing.ratcatcherrobes_leggings": "Ratcatcher Pants",
-      "item.lowlands_clothing.treatedleather": "Treated Leather",
-      "item.lowlands_clothing.penitent_rags_boots": "Penitent Sandals",
-      "entity.lowlands_clothing.grizzly_bear": "Grizzly Bear",
+      "item.lowlands_clothing.axolotliron": "Axolotl Iron Ingot",
       "item.lowlands_clothing.highlandslongkilt_boots": "Highlander Boots",
-      "item.lowlands_clothing.guard_captain_armor_helmet": "Guard\u0027s Captain Hat",
       "item.lowlands_clothing.mountainmenclothes_boots": "Mountainmen Boots",
       "item.lowlands_clothing.furpelt": "Fur Pelt",
       "item.lowlands_clothing.executorarmor_helmet": "Executioner Cowl",
       "item.lowlands_clothing.penitent_rags_chestplate": "Penitent Shirt",
-      "item.lowlands_clothing.guard_captain_armor_chestplate": "Guard\u0027s Captain Chestplate",
       "item.lowlands_clothing.highlandslongkilt_helmet": "Highlander Hat",
+      "item.lowlands_clothing.furnacemasteramor_boots": "Furnace Master Boots",
+      "block.lowlands_clothing.invisiblelight": "Invisiblelight",
+      "item.lowlands_clothing.plague_doctor_suit_boots": "Plague Doctor Shoes",
+      "item.lowlands_clothing.highlandslongkilt_chestplate": "Highlander Tunic",
+      "item.lowlands_clothing.ratcatcherrobes_helmet": "Ratcatcher Hat",
+      "item.lowlands_clothing.executorarmor_boots": "Executioner Boots",
+      "item.lowlands_clothing.axolotl_armor_chestplate": "Axolotl Knight Chestplate",
+      "item.lowlands_clothing.axolotl_armor_boots": "Axolotl Knight Boots",
+      "item.lowlands_clothing.mountainmenclothes_leggings": "Mountainmen Pants",
+      "item.lowlands_clothing.norsian_armor_chestplate": "Norsian Knight Chestplate",
+      "item.lowlands_clothing.snowtigerarmor_boots": "Snow Tiger Boots",
+      "item.lowlands_clothing.wingedcavaleryarmor_chestplate": "Winged Cavalery Chestplate",
+      "item.lowlands_clothing.mercenary_swordman_chestplate": "Mercenary Swordsman Chestplate",
+      "item.lowlands_clothing.executorarmor_chestplate": "Executioner Torso",
+      "item.lowlands_clothing.mountainmenclothes_chestplate": "Mountainmen Coat",
+      "item.lowlands_clothing.norsian_armor_boots": "Norsian Knight Boots",
+      "item.lowlands_clothing.grizzly_bear_spawn_egg": "Grizzly Bear Spawn Egg",
+      "item.lowlands_clothing.wingedcavaleryarmor_helmet": "Winged Cavalery Helmet",
+      "item.lowlands_clothing.furnacemasteramor_chestplate": "Furnace Master Torso",
+      "item_group.lowlands_clothing.armorsofthe_lowlands": "Armors of the Lowlands",
+      "item.lowlands_clothing.axolotl_armor_helmet": "Axolotl Knight Helmet",
+      "item.lowlands_clothing.treatedleather": "Treated Leather",
+      "item.lowlands_clothing.norsian_armor_helmet": "Norsian Knight Helmet",
+      "item.lowlands_clothing.penitent_rags_boots": "Penitent Sandals",
+      "entity.lowlands_clothing.grizzly_bear": "Grizzly Bear",
+      "item.lowlands_clothing.guard_captain_armor_helmet": "Guard\u0027s Captain Hat",
+      "item.lowlands_clothing.guard_captain_armor_chestplate": "Guard\u0027s Captain Chestplate",
       "item.lowlands_clothing.penitent_rags_leggings": "Penitent Underpants",
       "item.lowlands_clothing.furnacemasteramor_leggings": "Furnace Master Leggings",
       "item.lowlands_clothing.penitent_rags_helmet": "Penitent Cap",
       "item.lowlands_clothing.guard_captain_armor_boots": "Guard\u0027s Captain Boots",
-      "item.lowlands_clothing.furnacemasteramor_boots": "Furnace Master Boots",
+      "item.lowlands_clothing.wingedcavaleryarmor_leggings": "Winged Cavalery Pants",
       "item.lowlands_clothing.furnacemasteramor_helmet": "Furnace Master Helmet",
       "item.lowlands_clothing.ratcatcherrobes_boots": "Ratcatcher Shoes",
       "item.lowlands_clothing.mercenary_swordman_helmet": "Mercenary Swordsman Helmet",
-      "block.lowlands_clothing.invisiblelight": "Invisiblelight",
       "item.lowlands_clothing.plague_doctor_suit_helmet": "Plague Doctor Mask",
-      "item.lowlands_clothing.plague_doctor_suit_boots": "Plague Doctor Shoes",
-      "item.lowlands_clothing.highlandslongkilt_chestplate": "Highlander Tunic",
-      "item.lowlands_clothing.ratcatcherrobes_helmet": "Ratcatcher Hat",
       "item.lowlands_clothing.ratcatcherrobes_chestplate": "Ratcatcher Robes",
-      "item.lowlands_clothing.executorarmor_boots": "Executioner Boots",
       "item.lowlands_clothing.herbs_whip": "Herbs Whip",
       "item.lowlands_clothing.mercenary_swordman_leggings": "Mercenary Swordsman Pants",
       "item.lowlands_clothing.plague_doctor_suit_leggings": "Plague Doctor Pants",
       "item.lowlands_clothing.mercenary_swordman_boots": "Mercenary Swordsman Boots",
-      "item.lowlands_clothing.mountainmenclothes_leggings": "Mountainmen Pants",
       "item.lowlands_clothing.plague_doctor_suit_chestplate": "Plague Doctor Apron",
       "item.lowlands_clothing.cloth_fabric": "Cloth Fabric",
+      "item.lowlands_clothing.axolotl_armor_leggings": "Axolotl Knight Pants",
       "item.lowlands_clothing.snowtigerarmor_chestplate": "Snow Tiger Chestplate",
-      "item.lowlands_clothing.snowtigerarmor_boots": "Snow Tiger Boots",
       "item.lowlands_clothing.guard_captain_armor_leggings": "Guard\u0027s Captain Pants",
       "item.lowlands_clothing.snowtigerarmor_helmet": "Snow Tiger Helmet",
-      "item.lowlands_clothing.mercenary_swordman_chestplate": "Mercenary Swordsman Chestplate",
       "item.lowlands_clothing.mountainmenclothes_helmet": "Mountainmen Hat",
-      "item.lowlands_clothing.executorarmor_chestplate": "Executioner Torso",
-      "item.lowlands_clothing.mountainmenclothes_chestplate": "Mountainmen Coat",
       "item.lowlands_clothing.snowtigerarmor_leggings": "Snow Tiger Leggings",
       "item.lowlands_clothing.herbs_fiber": "Plant Fibers",
-      "item.lowlands_clothing.grizzly_bear_spawn_egg": "Grizzly Bear Spawn Egg",
-      "item.lowlands_clothing.furnacemasteramor_chestplate": "Furnace Master Torso"
+      "item.lowlands_clothing.norsian_armor_leggings": "Norsian Knight Pants"
     }
   },
   "foldersRoot": {

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:feather"
+    },
+    "b": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:wingedcavaleryarmor_chestplate",
+    "count": 1
+  }
+}

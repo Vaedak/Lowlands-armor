@@ -12,7 +12,7 @@
     "textureBoots": "highlands_suit_boots",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "highlands_suitb",

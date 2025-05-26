@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:axolotliron"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:axolotl_armor_helmet",
+    "count": 1
+  }
+}

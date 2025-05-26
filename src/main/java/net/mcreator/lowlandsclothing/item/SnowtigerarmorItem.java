@@ -26,7 +26,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.lowlandsclothing.procedures.SnowtigerarmortickeffectProcedure;
-import net.mcreator.lowlandsclothing.client.model.Modelsnowtigerarmor;
+import net.mcreator.lowlandsclothing.client.model.Modelsnowtigerarmorv01;
 
 import java.util.function.Consumer;
 import java.util.Map;
@@ -45,7 +45,7 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{3, 5, 7, 3}[type.getSlot().getIndex()];
+				return new int[]{3, 6, 7, 3}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -91,7 +91,7 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -126,9 +126,9 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).Body, "left_arm",
-							new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).LeftArm, "right_arm",
-							new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).Body,
+							"left_arm", new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).LeftArm, "right_arm",
+							new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -164,8 +164,8 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -194,8 +194,8 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new Modelsnowtigerarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmor.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new Modelsnowtigerarmorv01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsnowtigerarmorv01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();

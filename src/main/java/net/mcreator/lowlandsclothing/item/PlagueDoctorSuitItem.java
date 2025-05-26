@@ -26,7 +26,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.lowlandsclothing.procedures.PlagueDoctorSuittickupdateProcedure;
-import net.mcreator.lowlandsclothing.client.model.ModelPlaguedoctor;
+import net.mcreator.lowlandsclothing.client.model.ModelPlaguedoctor_v01;
 
 import java.util.function.Consumer;
 import java.util.Map;
@@ -40,7 +40,7 @@ public abstract class PlagueDoctorSuitItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 8;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 12;
 			}
 
 			@Override
@@ -91,7 +91,7 @@ public abstract class PlagueDoctorSuitItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -120,9 +120,9 @@ public abstract class PlagueDoctorSuitItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).Body, "left_arm",
-							new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).LeftArm, "right_arm",
-							new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).Body,
+							"left_arm", new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).LeftArm, "right_arm",
+							new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -164,8 +164,8 @@ public abstract class PlagueDoctorSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -194,8 +194,8 @@ public abstract class PlagueDoctorSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new ModelPlaguedoctor(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new ModelPlaguedoctor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(ModelPlaguedoctor_v01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();

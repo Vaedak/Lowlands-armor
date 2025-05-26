@@ -10,9 +10,12 @@
     "textureLeggings": "furnace_master_leggings",
     "enableBoots": true,
     "textureBoots": "furnace_master_boots",
+    "onBodyTick": {
+      "name": "FurnacemasteramorChestplateTickEvent"
+    },
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "furnace_master_armor",
@@ -24,7 +27,9 @@
       "fixedValue": []
     },
     "bodySpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Creates an area of light around the player when full armor is equiped ."
+      ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": []
@@ -32,19 +37,19 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "Modelfurnace_master_armor",
+    "helmetModelName": "Modelfurnace_master_armor_v01",
     "helmetModelPart": "Head",
     "helmetModelTexture": "From armor",
-    "bodyModelName": "Modelfurnace_master_armor",
+    "bodyModelName": "Modelfurnace_master_armor_v01",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
     "bodyModelTexture": "From armor",
-    "leggingsModelName": "Modelfurnace_master_armor",
+    "leggingsModelName": "Modelfurnace_master_armor_v01",
     "leggingsModelPartL": "LeftLeg",
     "leggingsModelPartR": "RightLeg",
     "leggingsModelTexture": "From armor",
-    "bootsModelName": "Modelfurnace_master_armor",
+    "bootsModelName": "Modelfurnace_master_armor_v01",
     "bootsModelPartL": "LeftLeg",
     "bootsModelPartR": "RightLeg",
     "bootsModelTexture": "From armor",
@@ -84,7 +89,7 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 17,
+    "maxDamage": 18,
     "damageValueHelmet": 3,
     "damageValueBody": 6,
     "damageValueLeggings": 5,

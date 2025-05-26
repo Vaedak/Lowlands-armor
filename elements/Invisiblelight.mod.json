@@ -47,7 +47,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 30,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -108,12 +108,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "InvisiblelightOnTickUpdate"
-    },
-    "onNeighbourBlockChanges": {
-      "name": "InvisiblelightOnTickUpdate"
-    },
     "onTickUpdate": {
       "name": "InvisiblelightOnTickUpdate"
     },

@@ -15,7 +15,7 @@
     },
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "plaguedoctor",
@@ -37,19 +37,19 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "ModelPlaguedoctor",
+    "helmetModelName": "ModelPlaguedoctor_v01",
     "helmetModelPart": "Head",
     "helmetModelTexture": "From armor",
-    "bodyModelName": "ModelPlaguedoctor",
+    "bodyModelName": "ModelPlaguedoctor_v01",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
     "bodyModelTexture": "From armor",
-    "leggingsModelName": "ModelPlaguedoctor",
+    "leggingsModelName": "ModelPlaguedoctor_v01",
     "leggingsModelPartL": "LeftLeg",
     "leggingsModelPartR": "RightLeg",
     "leggingsModelTexture": "From armor",
-    "bootsModelName": "ModelPlaguedoctor",
+    "bootsModelName": "ModelPlaguedoctor_v01",
     "bootsModelPartL": "LeftLeg",
     "bootsModelPartR": "RightLeg",
     "bootsModelTexture": "From armor",
@@ -89,7 +89,7 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 8,
+    "maxDamage": 12,
     "damageValueHelmet": 2,
     "damageValueBody": 4,
     "damageValueLeggings": 3,

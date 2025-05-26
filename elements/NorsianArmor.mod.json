@@ -1,0 +1,104 @@
+{
+  "_fv": 69,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "norsianravager_helmet",
+    "enableBody": true,
+    "textureBody": "norsianravager_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "norsianravager_leggings",
+    "enableBoots": true,
+    "textureBoots": "norsianravager_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ArmorsoftheLowlands"
+      }
+    ],
+    "armorTextureFile": "norse_ravager_armor",
+    "helmetName": "Norsian Knight Helmet",
+    "bodyName": "Norsian Knight Chestplate",
+    "leggingsName": "Norsian Knight Pants",
+    "bootsName": "Norsian Knight Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelNorsian_armor_corected",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelNorsian_armor_corected",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "ModelNorsian_armor_corected",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "ModelNorsian_armor_corected",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 12,
+    "damageValueHelmet": 3,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

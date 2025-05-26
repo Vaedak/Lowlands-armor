@@ -83,13 +83,7 @@ public class InvisiblelightBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		InvisiblelightOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		InvisiblelightOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		world.scheduleTick(pos, this, 30);
 	}
 
 	@Override
@@ -99,5 +93,6 @@ public class InvisiblelightBlock extends Block implements SimpleWaterloggedBlock
 		int y = pos.getY();
 		int z = pos.getZ();
 		InvisiblelightOnTickUpdateProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 30);
 	}
 }

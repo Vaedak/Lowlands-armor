@@ -12,7 +12,7 @@
     "textureBoots": "executioner_boots",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "executioner_armor",
@@ -84,7 +84,7 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 11,
+    "maxDamage": 15,
     "damageValueHelmet": 2,
     "damageValueBody": 5,
     "damageValueLeggings": 4,

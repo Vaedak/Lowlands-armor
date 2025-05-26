@@ -15,7 +15,7 @@
     },
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "penitant",
@@ -95,7 +95,7 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 10,
+    "maxDamage": 8,
     "damageValueHelmet": 1,
     "damageValueBody": 1,
     "damageValueLeggings": 1,

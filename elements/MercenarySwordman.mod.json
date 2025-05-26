@@ -12,7 +12,7 @@
     "textureBoots": "mercenary_swordman_shoes",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "mercenary_swordman",

@@ -12,7 +12,7 @@
     "textureBoots": "mountainmen_boots",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:ArmorsoftheLowlands"
       }
     ],
     "armorTextureFile": "mountainmen__clothes",
