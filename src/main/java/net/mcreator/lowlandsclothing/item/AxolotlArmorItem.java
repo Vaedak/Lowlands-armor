@@ -75,7 +75,7 @@ public abstract class AxolotlArmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.4f;
+				return 0.1f;
 			}
 		}, type, properties);
 	}
@@ -135,7 +135,7 @@ public abstract class AxolotlArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("Gives Dolphing Grace, Regeneration and Water breating when full armor is equiped and near Axolotl . "));
+			list.add(Component.literal("Gives Dolphing Grace, Regeneration and Water breating when near Axolotl . "));
 		}
 
 		@Override

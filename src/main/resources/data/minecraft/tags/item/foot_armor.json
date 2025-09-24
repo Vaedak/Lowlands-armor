@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "lowlands_clothing:maskerade_armor_boots",
+    "lowlands_clothing:wald_knight_armor_boots",
+    "lowlands_clothing:norsian_armor_boots",
+    "lowlands_clothing:axolotl_armor_boots",
+    "lowlands_clothing:wingedcavaleryarmor_boots",
+    "lowlands_clothing:penitent_rags_boots",
+    "lowlands_clothing:plague_doctor_suit_boots",
+    "lowlands_clothing:highlandslongkilt_boots",
+    "lowlands_clothing:furnacemasteramor_boots",
+    "lowlands_clothing:executorarmor_boots",
+    "lowlands_clothing:ratcatcherrobes_boots",
+    "lowlands_clothing:snowtigerarmor_boots",
+    "lowlands_clothing:mountainmenclothes_boots",
+    "lowlands_clothing:mercenary_swordman_boots",
+    "lowlands_clothing:guard_captain_armor_boots"
+  ]
+}

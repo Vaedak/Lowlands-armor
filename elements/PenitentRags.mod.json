@@ -30,7 +30,7 @@
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "When the full armor is equiped and under 5hp grants Speed and Strengh ."
+        "Grants Speed and Strengh under 5 health points ."
       ]
     },
     "leggingsSpecialInformation": {

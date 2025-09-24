@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.IRON_HELMET"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:SeaUpgradeTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:DepthScaphander.helmet"
+    },
+    "name": "scaphanderhelmetcraft",
+    "namespace": "mod"
+  }
+}

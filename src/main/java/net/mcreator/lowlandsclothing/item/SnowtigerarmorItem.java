@@ -75,7 +75,7 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 1f;
+				return 0.6f;
 			}
 		}, type, properties);
 	}
@@ -106,7 +106,7 @@ public abstract class SnowtigerarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("When in Powder Snow if the full armor is equiped gives Speed and Regeneration ."));
+			list.add(Component.literal("Grants Speed and Regeneration if in snow powder."));
 		}
 
 		@Override

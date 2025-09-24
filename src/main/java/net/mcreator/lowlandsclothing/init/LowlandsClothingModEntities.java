@@ -25,7 +25,7 @@ public class LowlandsClothingModEntities {
 	public static final RegistryObject<EntityType<GrizzlyBearEntity>> GRIZZLY_BEAR = register("grizzly_bear",
 			EntityType.Builder.<GrizzlyBearEntity>of(GrizzlyBearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrizzlyBearEntity::new)
 
-					.sized(2f, 2f));
+					.sized(1f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

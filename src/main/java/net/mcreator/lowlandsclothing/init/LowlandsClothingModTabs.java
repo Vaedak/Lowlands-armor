@@ -53,6 +53,7 @@ public class LowlandsClothingModTabs {
 				tabData.accept(LowlandsClothingModItems.FURNACEMASTERAMOR_BOOTS.get());
 				tabData.accept(LowlandsClothingModItems.HIGHLANDSLONGKILT_HELMET.get());
 				tabData.accept(LowlandsClothingModItems.HIGHLANDSLONGKILT_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.HIGHLANDSLONGKILT_LEGGINGS.get());
 				tabData.accept(LowlandsClothingModItems.HIGHLANDSLONGKILT_BOOTS.get());
 				tabData.accept(LowlandsClothingModItems.PLAGUE_DOCTOR_SUIT_HELMET.get());
 				tabData.accept(LowlandsClothingModItems.PLAGUE_DOCTOR_SUIT_CHESTPLATE.get());
@@ -74,6 +75,26 @@ public class LowlandsClothingModTabs {
 				tabData.accept(LowlandsClothingModItems.NORSIAN_ARMOR_CHESTPLATE.get());
 				tabData.accept(LowlandsClothingModItems.NORSIAN_ARMOR_LEGGINGS.get());
 				tabData.accept(LowlandsClothingModItems.NORSIAN_ARMOR_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.WALD_KNIGHT_ARMOR_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.WALD_KNIGHT_ARMOR_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.WALD_KNIGHT_ARMOR_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.WALD_KNIGHT_ARMOR_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.MASKERADE_ARMOR_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.MASKERADE_ARMOR_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.MASKERADE_ARMOR_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.MASKERADE_ARMOR_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CORSAIR_ARMOR_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CORSAIR_ARMOR_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CORSAIR_ARMOR_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CORSAIR_ARMOR_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CLOTHES_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CLOTHES_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CLOTHES_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.BRET_CLOTHES_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_BOOTS.get());
 			})
 
 			.build());
@@ -91,10 +112,18 @@ public class LowlandsClothingModTabs {
 			tabData.accept(LowlandsClothingModItems.HERBS_FIBER.get());
 			tabData.accept(LowlandsClothingModItems.TREATEDLEATHER.get());
 			tabData.accept(LowlandsClothingModItems.AXOLOTLIRON.get());
+			tabData.accept(LowlandsClothingModItems.SEA_UPGRADE_TEMPLATE.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(LowlandsClothingModItems.HERBS_WHIP.get());
+
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+
+			tabData.accept(LowlandsClothingModItems.KOUIGN_AMANN.get());
+			tabData.accept(LowlandsClothingModItems.GOLDEN_KOUIGN_AMANN.get());
+			tabData.accept(LowlandsClothingModItems.RAWGRIZZLYMEAT.get());
+			tabData.accept(LowlandsClothingModItems.COOKEDGRIZZLYMEAT.get());
 
 		}
 	}

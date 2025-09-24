@@ -8,11 +8,11 @@
       "registry_name": "guard_captain_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_leggings.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_chestplate.json",
           "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_helmet.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/GuardCaptainArmorItem.java"
+          "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_chestplate.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/GuardCaptainArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/guard_captain_armor_boots.json"
         ]
       }
     },
@@ -24,11 +24,11 @@
       "registry_name": "mercenary_swordman",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lowlandsclothing/item/MercenarySwordmanItem.java",
           "src/main/resources/assets/lowlands_clothing/models/item/mercenary_swordman_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/mercenary_swordman_boots.json",
           "src/main/resources/assets/lowlands_clothing/models/item/mercenary_swordman_helmet.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/mercenary_swordman_leggings.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/mercenary_swordman_boots.json"
+          "src/main/java/net/mcreator/lowlandsclothing/item/MercenarySwordmanItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/mercenary_swordman_leggings.json"
         ]
       }
     },
@@ -40,11 +40,11 @@
       "registry_name": "mountainmenclothes",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_helmet.json",
           "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_leggings.json",
           "src/main/java/net/mcreator/lowlandsclothing/item/MountainmenclothesItem.java",
-          "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_chestplate.json"
+          "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/mountainmenclothes_leggings.json"
         ]
       }
     },
@@ -57,10 +57,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/lowlands_clothing/models/item/snowtigerarmor_leggings.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/snowtigerarmor_chestplate.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/SnowtigerarmorItem.java",
           "src/main/resources/assets/lowlands_clothing/models/item/snowtigerarmor_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/snowtigerarmor_helmet.json"
+          "src/main/resources/assets/lowlands_clothing/models/item/snowtigerarmor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/snowtigerarmor_helmet.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/SnowtigerarmorItem.java"
         ]
       }
     },
@@ -72,11 +72,11 @@
       "registry_name": "ratcatcherrobes",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_chestplate.json",
           "src/main/java/net/mcreator/lowlandsclothing/item/RatcatcherrobesItem.java",
-          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_helmet.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_leggings.json"
+          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_boots.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/ratcatcherrobes_helmet.json"
         ]
       }
     },
@@ -88,11 +88,11 @@
       "registry_name": "executorarmor",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/ExecutorarmorItem.java",
           "src/main/resources/assets/lowlands_clothing/models/item/executorarmor_chestplate.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/executorarmor_leggings.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/executorarmor_boots.json",
           "src/main/resources/assets/lowlands_clothing/models/item/executorarmor_helmet.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/ExecutorarmorItem.java"
+          "src/main/resources/assets/lowlands_clothing/models/item/executorarmor_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/executorarmor_boots.json"
         ]
       }
     },
@@ -105,10 +105,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/lowlands_clothing/models/item/furnacemasteramor_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/furnacemasteramor_leggings.json",
           "src/main/resources/assets/lowlands_clothing/models/item/furnacemasteramor_chestplate.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/furnacemasteramor_boots.json",
           "src/main/java/net/mcreator/lowlandsclothing/item/FurnacemasteramorItem.java",
-          "src/main/resources/assets/lowlands_clothing/models/item/furnacemasteramor_leggings.json"
+          "src/main/resources/assets/lowlands_clothing/models/item/furnacemasteramor_boots.json"
         ]
       }
     },
@@ -121,9 +121,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_helmet.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/HighlandslongkiltItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_leggings.json",
           "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_chestplate.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/HighlandslongkiltItem.java"
+          "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_chestplate.json"
         ]
       }
     },
@@ -135,11 +136,11 @@
       "registry_name": "plague_doctor_suit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/item/plague_doctor_suit_chestplate.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/plague_doctor_suit_leggings.json",
           "src/main/resources/assets/lowlands_clothing/models/item/plague_doctor_suit_helmet.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/PlagueDoctorSuitItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/plague_doctor_suit_chestplate.json",
           "src/main/resources/assets/lowlands_clothing/models/item/plague_doctor_suit_boots.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/PlagueDoctorSuitItem.java"
+          "src/main/resources/assets/lowlands_clothing/models/item/plague_doctor_suit_leggings.json"
         ]
       }
     },
@@ -151,11 +152,11 @@
       "registry_name": "penitent_rags",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lowlandsclothing/item/PenitentRagsItem.java",
-          "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_leggings.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_helmet.json",
           "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_chestplate.json"
+          "src/main/java/net/mcreator/lowlandsclothing/item/PenitentRagsItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/penitent_rags_leggings.json"
         ]
       }
     },
@@ -197,11 +198,11 @@
       "registry_name": "invisiblelight",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/block/invisiblelight.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/invisiblelight.json",
           "src/main/resources/assets/lowlands_clothing/blockstates/invisiblelight.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/invisiblelight.json",
           "src/main/resources/data/lowlands_clothing/loot_tables/blocks/invisiblelight.json",
-          "src/main/java/net/mcreator/lowlandsclothing/block/InvisiblelightBlock.java"
+          "src/main/java/net/mcreator/lowlandsclothing/block/InvisiblelightBlock.java",
+          "src/main/resources/assets/lowlands_clothing/models/block/invisiblelight.json"
         ]
       }
     },
@@ -317,8 +318,8 @@
       "registry_name": "furpelt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lowlandsclothing/item/FurpeltItem.java",
-          "src/main/resources/assets/lowlands_clothing/models/item/furpelt.json"
+          "src/main/resources/assets/lowlands_clothing/models/item/furpelt.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/FurpeltItem.java"
         ]
       }
     },
@@ -330,9 +331,9 @@
       "registry_name": "grizzly_bear",
       "metadata": {
         "files": [
-          "src/main/resources/data/lowlands_clothing/forge/biome_modifier/grizzly_bear_biome_modifier.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/grizzly_bear_spawn_egg.json",
           "src/main/java/net/mcreator/lowlandsclothing/entity/GrizzlyBearEntity.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/grizzly_bear_spawn_egg.json",
+          "src/main/resources/data/lowlands_clothing/forge/biome_modifier/grizzly_bear_biome_modifier.json",
           "src/main/java/net/mcreator/lowlandsclothing/client/renderer/GrizzlyBearRenderer.java"
         ]
       }
@@ -345,8 +346,8 @@
       "registry_name": "cloth_fabric",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/item/cloth_fabric.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/ClothFabricItem.java"
+          "src/main/java/net/mcreator/lowlandsclothing/item/ClothFabricItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/cloth_fabric.json"
         ]
       }
     },
@@ -373,7 +374,8 @@
         "files": [
           "src/main/resources/data/lowlands_clothing/recipes/clothfabriccraft.json"
         ]
-      }
+      },
+      "path": "~/crafts"
     },
     {
       "name": "HerbsWhipBlockDestroyedWithTool",
@@ -428,7 +430,8 @@
         "files": [
           "src/main/resources/data/lowlands_clothing/recipes/herbs_whipcraft.json"
         ]
-      }
+      },
+      "path": "~/crafts"
     },
     {
       "name": "Executionercowl",
@@ -490,8 +493,8 @@
       "registry_name": "treatedleather",
       "metadata": {
         "files": [
-          "src/main/resources/assets/lowlands_clothing/models/item/treatedleather.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/TreatedleatherItem.java"
+          "src/main/java/net/mcreator/lowlandsclothing/item/TreatedleatherItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/treatedleather.json"
         ]
       }
     },
@@ -984,10 +987,10 @@
       "registry_name": "wingedcavaleryarmor",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/WingedcavaleryarmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_helmet.json",
           "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_leggings.json",
           "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_chestplate.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_helmet.json",
-          "src/main/java/net/mcreator/lowlandsclothing/item/WingedcavaleryarmorItem.java",
           "src/main/resources/assets/lowlands_clothing/models/item/wingedcavaleryarmor_boots.json"
         ]
       }
@@ -1000,11 +1003,11 @@
       "registry_name": "axolotl_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lowlandsclothing/item/AxolotlArmorItem.java",
           "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_helmet.json",
           "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_leggings.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_boots.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_chestplate.json"
+          "src/main/java/net/mcreator/lowlandsclothing/item/AxolotlArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/axolotl_armor_boots.json"
         ]
       }
     },
@@ -1017,10 +1020,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_chestplate.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_boots.json",
           "src/main/java/net/mcreator/lowlandsclothing/item/NorsianArmorItem.java",
           "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_helmet.json",
-          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_boots.json"
+          "src/main/resources/assets/lowlands_clothing/models/item/norsian_armor_leggings.json"
         ]
       }
     },
@@ -1267,6 +1270,621 @@
           }
         ]
       }
+    },
+    {
+      "name": "WaldKnightArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wald_knight_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/WaldKnightArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/wald_knight_armor_leggings.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/wald_knight_armor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/wald_knight_armor_boots.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/wald_knight_armor_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "MaskeradeArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskerade_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/maskerade_armor_leggings.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/MaskeradeArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/maskerade_armor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/maskerade_armor_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/maskerade_armor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "MaskeradeMaskcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskerade_maskcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/maskerade_maskcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Maskeradechestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskeradechestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/maskeradechestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Maskeradepantscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskeradepantscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/maskeradepantscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "MaskeradeBootscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskerade_bootscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/maskerade_bootscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Waldknighthelmet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waldknighthelmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/waldknighthelmet.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Waldknightchestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waldknightchestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/waldknightchestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Waldknightleggingscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waldknightleggingscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/waldknightleggingscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Waldknightbootscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waldknightbootscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/waldknightbootscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "MaskeradeArmorfullwear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskerade_armorfullwear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/MaskeradeArmorfullwearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Waldknightarmortick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waldknightarmortick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/WaldknightarmortickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BretCorsairArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_corsair_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_corsair_armor_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_corsair_armor_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_corsair_armor_leggings.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/BretCorsairArmorItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_corsair_armor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "BretClothes",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_clothes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_clothes_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_clothes_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_clothes_leggings.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/BretClothesItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/bret_clothes_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "BretHatcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_hatcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bret_hatcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "BretChestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_chestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bret_chestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Bretpantscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bretpantscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bretpantscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "BretBootsCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_boots_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bret_boots_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "SeaUpgradeTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_upgrade_template",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/SeaUpgradeTemplateItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/sea_upgrade_template.json"
+        ]
+      }
+    },
+    {
+      "name": "Bretcorsairhatcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bretcorsairhatcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bretcorsairhatcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "BretcorsairChestcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bretcorsair_chestcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bretcorsair_chestcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "BretCorsairLegscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_corsair_legscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bret_corsair_legscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "BretCorsairbootsCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bret_corsairboots_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/bret_corsairboots_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Seachestloottable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seachestloottable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/chests/shipwreck_supply.json"
+        ]
+      }
+    },
+    {
+      "name": "DepthScaphander",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depth_scaphander",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/depth_scaphander_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/depth_scaphander_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/depth_scaphander_boots.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/depth_scaphander_leggings.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/DepthScaphanderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Depthscaphandertick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depthscaphandertick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/DepthscaphandertickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Scaphanderhelmetcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scaphanderhelmetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/scaphanderhelmetcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Scaphanderchestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scaphanderchestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/scaphanderchestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Scaphanderleggingscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scaphanderleggingscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/scaphanderleggingscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Scaphanderbootscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scaphanderbootscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/scaphanderbootscraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Lighthouse",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lighthouse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/worldgen/structure/lighthouse.json",
+          "src/main/resources/data/lowlands_clothing/worldgen/structure_set/lighthouse.json",
+          "src/main/resources/data/lowlands_clothing/worldgen/template_pool/lighthouse.json"
+        ]
+      }
+    },
+    {
+      "name": "KouignAmann",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kouign_amann",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/kouign_amann.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/KouignAmannItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldenKouignAmann",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_kouign_amann",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/GoldenKouignAmannItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/golden_kouign_amann.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldenKouignAmannPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_kouign_amann_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/GoldenKouignAmannPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Huntsmanlootable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huntsmanlootable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/loot_tables/chests/huntsmanlootable.json"
+        ]
+      }
+    },
+    {
+      "name": "Pillagerlogcabin",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillagerlogcabin",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/worldgen/template_pool/pillagerlogcabin.json",
+          "src/main/resources/data/lowlands_clothing/worldgen/structure_set/pillagerlogcabin.json",
+          "src/main/resources/data/lowlands_clothing/worldgen/structure/pillagerlogcabin.json"
+        ]
+      }
+    },
+    {
+      "name": "Abandonnedlogcabin",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abandonnedlogcabin",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/worldgen/structure_set/abandonnedlogcabin.json",
+          "src/main/resources/data/lowlands_clothing/worldgen/template_pool/abandonnedlogcabin.json",
+          "src/main/resources/data/lowlands_clothing/worldgen/structure/abandonnedlogcabin.json"
+        ]
+      }
+    },
+    {
+      "name": "Rawgrizzlymeat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawgrizzlymeat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/RawgrizzlymeatItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/rawgrizzlymeat.json"
+        ]
+      }
+    },
+    {
+      "name": "Cookedgrizzlymeat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedgrizzlymeat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/cookedgrizzlymeat.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/CookedgrizzlymeatItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Cookingbear",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookingbear",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/cookingbear.json"
+        ]
+      }
+    },
+    {
+      "name": "GrizzlyBearlootable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grizzly_bearlootable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/loot_tables/entities/grizzly_bear.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1290,23 +1908,34 @@
       "item.lowlands_clothing.wingedcavaleryarmor_boots": "Winged Cavalery Boots",
       "item.lowlands_clothing.ratcatcherrobes_leggings": "Ratcatcher Pants",
       "item.lowlands_clothing.axolotliron": "Axolotl Iron Ingot",
+      "item.lowlands_clothing.wald_knight_armor_chestplate": "Wald Knight Chestplate",
       "item.lowlands_clothing.highlandslongkilt_boots": "Highlander Boots",
+      "item.lowlands_clothing.maskerade_armor_leggings": "Masquerade Robes",
       "item.lowlands_clothing.mountainmenclothes_boots": "Mountainmen Boots",
+      "item.lowlands_clothing.kouign_amann": "Kouign-Amann",
       "item.lowlands_clothing.furpelt": "Fur Pelt",
       "item.lowlands_clothing.executorarmor_helmet": "Executioner Cowl",
       "item.lowlands_clothing.penitent_rags_chestplate": "Penitent Shirt",
       "item.lowlands_clothing.highlandslongkilt_helmet": "Highlander Hat",
+      "item.lowlands_clothing.golden_kouign_amann": "Golden Kouign-Amann",
+      "item.lowlands_clothing.bret_clothes_boots": "Bret Boots",
       "item.lowlands_clothing.furnacemasteramor_boots": "Furnace Master Boots",
+      "item.lowlands_clothing.bret_clothes_helmet": "Bret Hat",
       "block.lowlands_clothing.invisiblelight": "Invisiblelight",
       "item.lowlands_clothing.plague_doctor_suit_boots": "Plague Doctor Shoes",
       "item.lowlands_clothing.highlandslongkilt_chestplate": "Highlander Tunic",
       "item.lowlands_clothing.ratcatcherrobes_helmet": "Ratcatcher Hat",
       "item.lowlands_clothing.executorarmor_boots": "Executioner Boots",
       "item.lowlands_clothing.axolotl_armor_chestplate": "Axolotl Knight Chestplate",
+      "item.lowlands_clothing.cookedgrizzlymeat": "Cooked Grizzly",
       "item.lowlands_clothing.axolotl_armor_boots": "Axolotl Knight Boots",
+      "item.lowlands_clothing.maskerade_armor_chestplate": "Masquerade Robes",
+      "item.lowlands_clothing.highlandslongkilt_leggings": "Highlander Kilt",
+      "item.lowlands_clothing.wald_knight_armor_leggings": "Wald Knight Pants",
       "item.lowlands_clothing.mountainmenclothes_leggings": "Mountainmen Pants",
       "item.lowlands_clothing.norsian_armor_chestplate": "Norsian Knight Chestplate",
       "item.lowlands_clothing.snowtigerarmor_boots": "Snow Tiger Boots",
+      "item.lowlands_clothing.depth_scaphander_boots": "Depth Scaphander Boots",
       "item.lowlands_clothing.wingedcavaleryarmor_chestplate": "Winged Cavalery Chestplate",
       "item.lowlands_clothing.mercenary_swordman_chestplate": "Mercenary Swordsman Chestplate",
       "item.lowlands_clothing.executorarmor_chestplate": "Executioner Torso",
@@ -1315,6 +1944,7 @@
       "item.lowlands_clothing.grizzly_bear_spawn_egg": "Grizzly Bear Spawn Egg",
       "item.lowlands_clothing.wingedcavaleryarmor_helmet": "Winged Cavalery Helmet",
       "item.lowlands_clothing.furnacemasteramor_chestplate": "Furnace Master Torso",
+      "item.lowlands_clothing.bret_corsair_armor_leggings": "Bret Corsair Pants",
       "item_group.lowlands_clothing.armorsofthe_lowlands": "Armors of the Lowlands",
       "item.lowlands_clothing.axolotl_armor_helmet": "Axolotl Knight Helmet",
       "item.lowlands_clothing.treatedleather": "Treated Leather",
@@ -1322,30 +1952,44 @@
       "item.lowlands_clothing.penitent_rags_boots": "Penitent Sandals",
       "entity.lowlands_clothing.grizzly_bear": "Grizzly Bear",
       "item.lowlands_clothing.guard_captain_armor_helmet": "Guard\u0027s Captain Hat",
+      "item.lowlands_clothing.depth_scaphander_helmet": "Depth Scaphander Helmet",
       "item.lowlands_clothing.guard_captain_armor_chestplate": "Guard\u0027s Captain Chestplate",
       "item.lowlands_clothing.penitent_rags_leggings": "Penitent Underpants",
+      "item.lowlands_clothing.bret_corsair_armor_chestplate": "Bret Corsair Top",
       "item.lowlands_clothing.furnacemasteramor_leggings": "Furnace Master Leggings",
       "item.lowlands_clothing.penitent_rags_helmet": "Penitent Cap",
       "item.lowlands_clothing.guard_captain_armor_boots": "Guard\u0027s Captain Boots",
       "item.lowlands_clothing.wingedcavaleryarmor_leggings": "Winged Cavalery Pants",
+      "item.lowlands_clothing.rawgrizzlymeat": "Raw Grizzly",
+      "item.lowlands_clothing.maskerade_armor_boots": "Masquerade Shoes",
       "item.lowlands_clothing.furnacemasteramor_helmet": "Furnace Master Helmet",
+      "item.lowlands_clothing.depth_scaphander_leggings": "Depth Scaphander Leggings",
       "item.lowlands_clothing.ratcatcherrobes_boots": "Ratcatcher Shoes",
       "item.lowlands_clothing.mercenary_swordman_helmet": "Mercenary Swordsman Helmet",
       "item.lowlands_clothing.plague_doctor_suit_helmet": "Plague Doctor Mask",
+      "item.lowlands_clothing.bret_corsair_armor_boots": "Bret Corsair Boots",
+      "item.lowlands_clothing.sea_upgrade_template": "Sea Upgrade Template",
+      "item.lowlands_clothing.wald_knight_armor_helmet": "Wald Knight Hat",
       "item.lowlands_clothing.ratcatcherrobes_chestplate": "Ratcatcher Robes",
       "item.lowlands_clothing.herbs_whip": "Herbs Whip",
       "item.lowlands_clothing.mercenary_swordman_leggings": "Mercenary Swordsman Pants",
       "item.lowlands_clothing.plague_doctor_suit_leggings": "Plague Doctor Pants",
       "item.lowlands_clothing.mercenary_swordman_boots": "Mercenary Swordsman Boots",
+      "item.lowlands_clothing.bret_clothes_leggings": "Bret Pants",
       "item.lowlands_clothing.plague_doctor_suit_chestplate": "Plague Doctor Apron",
       "item.lowlands_clothing.cloth_fabric": "Cloth Fabric",
       "item.lowlands_clothing.axolotl_armor_leggings": "Axolotl Knight Pants",
+      "item.lowlands_clothing.maskerade_armor_helmet": "Masquerade Mask",
       "item.lowlands_clothing.snowtigerarmor_chestplate": "Snow Tiger Chestplate",
       "item.lowlands_clothing.guard_captain_armor_leggings": "Guard\u0027s Captain Pants",
       "item.lowlands_clothing.snowtigerarmor_helmet": "Snow Tiger Helmet",
+      "item.lowlands_clothing.bret_clothes_chestplate": "Bret Vest",
       "item.lowlands_clothing.mountainmenclothes_helmet": "Mountainmen Hat",
+      "item.lowlands_clothing.depth_scaphander_chestplate": "Depth Scaphander Chestplate",
+      "item.lowlands_clothing.bret_corsair_armor_helmet": "Bret Corsair Hat",
       "item.lowlands_clothing.snowtigerarmor_leggings": "Snow Tiger Leggings",
       "item.lowlands_clothing.herbs_fiber": "Plant Fibers",
+      "item.lowlands_clothing.wald_knight_armor_boots": "Wald Knight Boots",
       "item.lowlands_clothing.norsian_armor_leggings": "Norsian Knight Pants"
     }
   },
@@ -1364,13 +2008,14 @@
     "version": "1.0.0",
     "author": "anton, MCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "license": "All Rights Reserved",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.lowlandsclothing"
   },
   "mcreatorVersion": 202400342716

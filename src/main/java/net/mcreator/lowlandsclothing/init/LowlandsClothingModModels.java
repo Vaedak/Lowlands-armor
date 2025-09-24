@@ -14,6 +14,7 @@ import net.mcreator.lowlandsclothing.client.model.Modelsnowtigerarmor;
 import net.mcreator.lowlandsclothing.client.model.Modelratcatcher_armor;
 import net.mcreator.lowlandsclothing.client.model.Modelmountainmenclothes;
 import net.mcreator.lowlandsclothing.client.model.Modelmercenaryswordsman;
+import net.mcreator.lowlandsclothing.client.model.Modelmaskerade_armor_u;
 import net.mcreator.lowlandsclothing.client.model.Modelgrizzlybeartb;
 import net.mcreator.lowlandsclothing.client.model.Modelfurnace_master_armor_v01;
 import net.mcreator.lowlandsclothing.client.model.Modelfurnace_master_armor;
@@ -21,6 +22,7 @@ import net.mcreator.lowlandsclothing.client.model.Modelexecutionerclothes;
 import net.mcreator.lowlandsclothing.client.model.Modelexecutioner_armorV01;
 import net.mcreator.lowlandsclothing.client.model.Modelaxolotl_armor;
 import net.mcreator.lowlandsclothing.client.model.ModelWingedcavaleryarmor;
+import net.mcreator.lowlandsclothing.client.model.ModelWaldknightarmor;
 import net.mcreator.lowlandsclothing.client.model.ModelPlaguedoctor_v01;
 import net.mcreator.lowlandsclothing.client.model.ModelPlaguedoctor;
 import net.mcreator.lowlandsclothing.client.model.ModelPenitant_Outfit;
@@ -28,23 +30,31 @@ import net.mcreator.lowlandsclothing.client.model.ModelNorsian_armor_corected;
 import net.mcreator.lowlandsclothing.client.model.ModelNorsian_armor;
 import net.mcreator.lowlandsclothing.client.model.ModelHighlands_longkilt;
 import net.mcreator.lowlandsclothing.client.model.ModelGuardCaptainUniform;
+import net.mcreator.lowlandsclothing.client.model.ModelDepth_scaphander;
+import net.mcreator.lowlandsclothing.client.model.ModelBret_base_clothes;
+import net.mcreator.lowlandsclothing.client.model.ModelBret_armor_corsair_v2;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class LowlandsClothingModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelPlaguedoctor.LAYER_LOCATION, ModelPlaguedoctor::createBodyLayer);
+		event.registerLayerDefinition(ModelBret_armor_corsair_v2.LAYER_LOCATION, ModelBret_armor_corsair_v2::createBodyLayer);
 		event.registerLayerDefinition(ModelPenitant_Outfit.LAYER_LOCATION, ModelPenitant_Outfit::createBodyLayer);
 		event.registerLayerDefinition(ModelPlaguedoctor_v01.LAYER_LOCATION, ModelPlaguedoctor_v01::createBodyLayer);
 		event.registerLayerDefinition(Modelexecutionerclothes.LAYER_LOCATION, Modelexecutionerclothes::createBodyLayer);
 		event.registerLayerDefinition(ModelHighlands_longkilt.LAYER_LOCATION, ModelHighlands_longkilt::createBodyLayer);
 		event.registerLayerDefinition(Modelgrizzlybeartb.LAYER_LOCATION, Modelgrizzlybeartb::createBodyLayer);
 		event.registerLayerDefinition(Modelexecutioner_armorV01.LAYER_LOCATION, Modelexecutioner_armorV01::createBodyLayer);
+		event.registerLayerDefinition(Modelmaskerade_armor_u.LAYER_LOCATION, Modelmaskerade_armor_u::createBodyLayer);
+		event.registerLayerDefinition(ModelBret_base_clothes.LAYER_LOCATION, ModelBret_base_clothes::createBodyLayer);
 		event.registerLayerDefinition(Modelsnowtigerarmorv01.LAYER_LOCATION, Modelsnowtigerarmorv01::createBodyLayer);
+		event.registerLayerDefinition(ModelDepth_scaphander.LAYER_LOCATION, ModelDepth_scaphander::createBodyLayer);
 		event.registerLayerDefinition(Modelfurnace_master_armor_v01.LAYER_LOCATION, Modelfurnace_master_armor_v01::createBodyLayer);
 		event.registerLayerDefinition(ModelNorsian_armor.LAYER_LOCATION, ModelNorsian_armor::createBodyLayer);
 		event.registerLayerDefinition(ModelGuardCaptainUniform.LAYER_LOCATION, ModelGuardCaptainUniform::createBodyLayer);
 		event.registerLayerDefinition(Modelmercenaryswordsman.LAYER_LOCATION, Modelmercenaryswordsman::createBodyLayer);
+		event.registerLayerDefinition(ModelWaldknightarmor.LAYER_LOCATION, ModelWaldknightarmor::createBodyLayer);
 		event.registerLayerDefinition(Modelsnowtigerarmor.LAYER_LOCATION, Modelsnowtigerarmor::createBodyLayer);
 		event.registerLayerDefinition(Modelfurnace_master_armor.LAYER_LOCATION, Modelfurnace_master_armor::createBodyLayer);
 		event.registerLayerDefinition(Modelratcatcher_armor.LAYER_LOCATION, Modelratcatcher_armor::createBodyLayer);

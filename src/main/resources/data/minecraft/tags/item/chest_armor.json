@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "lowlands_clothing:maskerade_armor_chestplate",
+    "lowlands_clothing:wald_knight_armor_chestplate",
+    "lowlands_clothing:norsian_armor_chestplate",
+    "lowlands_clothing:axolotl_armor_chestplate",
+    "lowlands_clothing:wingedcavaleryarmor_chestplate",
+    "lowlands_clothing:penitent_rags_chestplate",
+    "lowlands_clothing:plague_doctor_suit_chestplate",
+    "lowlands_clothing:highlandslongkilt_chestplate",
+    "lowlands_clothing:furnacemasteramor_chestplate",
+    "lowlands_clothing:executorarmor_chestplate",
+    "lowlands_clothing:ratcatcherrobes_chestplate",
+    "lowlands_clothing:snowtigerarmor_chestplate",
+    "lowlands_clothing:mountainmenclothes_chestplate",
+    "lowlands_clothing:mercenary_swordman_chestplate",
+    "lowlands_clothing:guard_captain_armor_chestplate"
+  ]
+}

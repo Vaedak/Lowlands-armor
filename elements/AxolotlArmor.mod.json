@@ -28,7 +28,7 @@
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "Gives Dolphing Grace, Regeneration and Water breating when full armor is equiped and near Axolotl . "
+        "Gives Dolphing Grace, Regeneration and Water breating when near Axolotl . "
       ]
     },
     "leggingsSpecialInformation": {
@@ -96,7 +96,7 @@
     "damageValueBoots": 2,
     "enchantability": 12,
     "toughness": 0.1,
-    "knockbackResistance": 0.4,
+    "knockbackResistance": 0.1,
     "equipSound": {
       "value": "item.armor.equip_iron"
     },

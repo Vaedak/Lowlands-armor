@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "lowlands_clothing:maskerade_armor_helmet",
+    "lowlands_clothing:wald_knight_armor_helmet",
+    "lowlands_clothing:norsian_armor_helmet",
+    "lowlands_clothing:axolotl_armor_helmet",
+    "lowlands_clothing:wingedcavaleryarmor_helmet",
+    "lowlands_clothing:penitent_rags_helmet",
+    "lowlands_clothing:plague_doctor_suit_helmet",
+    "lowlands_clothing:highlandslongkilt_helmet",
+    "lowlands_clothing:furnacemasteramor_helmet",
+    "lowlands_clothing:executorarmor_helmet",
+    "lowlands_clothing:ratcatcherrobes_helmet",
+    "lowlands_clothing:snowtigerarmor_helmet",
+    "lowlands_clothing:mountainmenclothes_helmet",
+    "lowlands_clothing:mercenary_swordman_helmet",
+    "lowlands_clothing:guard_captain_armor_helmet"
+  ]
+}

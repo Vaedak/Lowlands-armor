@@ -67,7 +67,7 @@ public abstract class GuardCaptainArmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.4f;
+				return 0.2f;
 			}
 		}, type, properties);
 	}

@@ -28,7 +28,7 @@
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "Negate potion effects when the full armor is equiped ."
+        "Negate potion effects ."
       ]
     },
     "leggingsSpecialInformation": {

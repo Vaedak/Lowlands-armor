@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "lowlands_clothing:lighthouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 21,
+    "separation": 15,
+    "salt": 1463095153
+  }
+}

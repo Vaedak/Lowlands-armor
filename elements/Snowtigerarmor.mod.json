@@ -25,7 +25,7 @@
     "bootsName": "Snow Tiger Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "When in Powder Snow if the full armor is equiped gives Speed and Regeneration ."
+        "Grants Speed and Regeneration if in snow powder."
       ]
     },
     "bodySpecialInformation": {
@@ -96,7 +96,7 @@
     "damageValueBoots": 3,
     "enchantability": 9,
     "toughness": 3.0,
-    "knockbackResistance": 1.0,
+    "knockbackResistance": 0.6,
     "equipSound": {
       "value": "item.armor.equip_iron"
     },

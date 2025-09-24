@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "lowlands_clothing:abandonnedlogcabin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 42,
+    "separation": 22,
+    "salt": 1584748807
+  }
+}

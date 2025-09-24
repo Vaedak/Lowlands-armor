@@ -135,7 +135,7 @@ public abstract class PlagueDoctorSuitItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("Negate potion effects when the full armor is equiped ."));
+			list.add(Component.literal("Negate potion effects ."));
 		}
 
 		@Override

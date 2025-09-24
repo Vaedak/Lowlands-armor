@@ -141,7 +141,7 @@ public abstract class PenitentRagsItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("When the full armor is equiped and under 5hp grants Speed and Strengh ."));
+			list.add(Component.literal("Grants Speed and Strengh under 5 health points ."));
 		}
 
 		@Override

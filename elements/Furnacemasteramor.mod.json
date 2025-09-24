@@ -28,7 +28,7 @@
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "Creates an area of light around the player when full armor is equiped ."
+        "Creates an area of light around the player  ."
       ]
     },
     "leggingsSpecialInformation": {
@@ -96,7 +96,7 @@
     "damageValueBoots": 3,
     "enchantability": 9,
     "toughness": 2.0,
-    "knockbackResistance": 1.0,
+    "knockbackResistance": 0.6,
     "equipSound": {
       "value": "block.lantern.hit"
     },

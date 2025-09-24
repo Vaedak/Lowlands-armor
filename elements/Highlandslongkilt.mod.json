@@ -6,8 +6,8 @@
     "textureHelmet": "highlands_suit_hat",
     "enableBody": true,
     "textureBody": "highlands_suit_shirt",
-    "enableLeggings": false,
-    "textureLeggings": "",
+    "enableLeggings": true,
+    "textureLeggings": "highlands_suit_kilt",
     "enableBoots": true,
     "textureBoots": "highlands_suit_boots",
     "creativeTabs": [
@@ -18,7 +18,7 @@
     "armorTextureFile": "highlands_suitb",
     "helmetName": "Highlander Hat",
     "bodyName": "Highlander Tunic",
-    "leggingsName": "Highlander Longkilt",
+    "leggingsName": "Highlander Kilt",
     "bootsName": "Highlander Boots",
     "helmetSpecialInformation": {
       "fixedValue": []
@@ -93,7 +93,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "block.cloth.place"
     },
     "repairItems": [
       {
