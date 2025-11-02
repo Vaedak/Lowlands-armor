@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "dark_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga"
+  ],
+  "spawners": {
+    "type": "lowlands_clothing:grizzly_bear",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

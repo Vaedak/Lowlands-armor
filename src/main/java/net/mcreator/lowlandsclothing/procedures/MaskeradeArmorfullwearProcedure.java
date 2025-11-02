@@ -20,7 +20,7 @@ public class MaskeradeArmorfullwearProcedure {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == LowlandsClothingModItems.MASKERADE_ARMOR_CHESTPLATE.get()) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == LowlandsClothingModItems.MASKERADE_ARMOR_LEGGINGS.get()) {
 					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == LowlandsClothingModItems.MASKERADE_ARMOR_BOOTS.get()) {
-						if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(MobEffects.BAD_OMEN)) || !(entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.MOVEMENT_SPEED))) {
+						if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(MobEffects.BAD_OMEN)) || !(entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.RAID_OMEN))) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.BAD_OMEN, 60000, 1, false, false));
 							if (world instanceof ServerLevel _level11 && _level11.isRaided(BlockPos.containing(x, y, z))) {

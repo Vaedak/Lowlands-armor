@@ -1,10 +1,14 @@
 
 package net.mcreator.lowlandsclothing.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -18,132 +22,131 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
+import net.minecraft.Util;
 
 import net.mcreator.lowlandsclothing.procedures.FurnacemasteramorChestplateTickEventProcedure;
 import net.mcreator.lowlandsclothing.init.LowlandsClothingModItems;
 import net.mcreator.lowlandsclothing.client.model.Modelfurnace_master_armor_v01;
 
-import java.util.function.Consumer;
 import java.util.Map;
 import java.util.List;
+import java.util.EnumMap;
 import java.util.Collections;
 
 import com.google.common.collect.Iterables;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class FurnacemasteramorItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 3);
+				map.put(ArmorItem.Type.LEGGINGS, 5);
+				map.put(ArmorItem.Type.CHESTPLATE, 6);
+				map.put(ArmorItem.Type.HELMET, 3);
+				map.put(ArmorItem.Type.BODY, 6);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.lantern.hit")), () -> Ingredient.of(new ItemStack(Items.IRON_INGOT), new ItemStack(LowlandsClothingModItems.TREATEDLEATHER.get())),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("lowlands_clothing:furnace_master_armor"))), 2f, 0.6f);
+			registerHelper.register(ResourceLocation.parse("lowlands_clothing:furnacemasteramor"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
+	@SubscribeEvent
+	public static void registerItemExtensions(RegisterClientExtensionsEvent event) {
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("head", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.FURNACEMASTERAMOR_HELMET.get());
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("body", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).Body, "left_arm",
+								new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).LeftArm, "right_arm",
+								new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.FURNACEMASTERAMOR_CHESTPLATE.get());
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("left_leg", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).LeftLeg, "right_leg",
+								new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.FURNACEMASTERAMOR_LEGGINGS.get());
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("left_leg", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).LeftLeg, "right_leg",
+								new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.FURNACEMASTERAMOR_BOOTS.get());
+	}
+
 	public FurnacemasteramorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 18;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{3, 5, 6, 3}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 9;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lantern.hit"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.IRON_INGOT), new ItemStack(LowlandsClothingModItems.TREATEDLEATHER.get()));
-			}
-
-			@Override
-			public String getName() {
-				return "furnacemasteramor";
-			}
-
-			@Override
-			public float getToughness() {
-				return 2f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0.6f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends FurnacemasteramorItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().fireResistant());
-		}
-
-		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).Head, "hat",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/furnace_master_armor_layer_1.png";
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18)).fireResistant());
 		}
 	}
 
 	public static class Chestplate extends FurnacemasteramorItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(18)).fireResistant());
 		}
 
 		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("body", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).Body, "left_arm",
-									new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).LeftArm, "right_arm",
-									new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.literal("Creates an area of light around the player  ."));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/furnace_master_armor_layer_1.png";
 		}
 
 		@Override
@@ -157,61 +160,13 @@ public abstract class FurnacemasteramorItem extends ArmorItem {
 
 	public static class Leggings extends FurnacemasteramorItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant());
-		}
-
-		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/furnace_master_armor_layer_2.png";
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(18)).fireResistant());
 		}
 	}
 
 	public static class Boots extends FurnacemasteramorItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
-		}
-
-		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new Modelfurnace_master_armor_v01(Minecraft.getInstance().getEntityModels().bakeLayer(Modelfurnace_master_armor_v01.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/furnace_master_armor_layer_1.png";
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18)).fireResistant());
 		}
 	}
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:depth_scaphander_leggings",
+    "lowlands_clothing:bret_clothes_leggings",
+    "lowlands_clothing:bret_corsair_armor_leggings",
     "lowlands_clothing:maskerade_armor_leggings",
     "lowlands_clothing:wald_knight_armor_leggings",
     "lowlands_clothing:norsian_armor_leggings",

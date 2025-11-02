@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:depth_scaphander_helmet",
+    "lowlands_clothing:bret_clothes_helmet",
+    "lowlands_clothing:bret_corsair_armor_helmet",
     "lowlands_clothing:maskerade_armor_helmet",
     "lowlands_clothing:wald_knight_armor_helmet",
     "lowlands_clothing:norsian_armor_helmet",

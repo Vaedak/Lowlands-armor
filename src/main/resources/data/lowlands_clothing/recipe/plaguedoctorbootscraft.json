@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:treatedleather"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:plague_doctor_suit_boots",
+    "count": 1
+  }
+}

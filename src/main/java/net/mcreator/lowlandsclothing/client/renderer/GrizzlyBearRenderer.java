@@ -22,6 +22,6 @@ public class GrizzlyBearRenderer extends MobRenderer<GrizzlyBearEntity, Modelgri
 
 	@Override
 	public ResourceLocation getTextureLocation(GrizzlyBearEntity entity) {
-		return new ResourceLocation("lowlands_clothing:textures/entities/grizzlybear.png");
+		return ResourceLocation.parse("lowlands_clothing:textures/entities/grizzlybear.png");
 	}
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:treatedleather"
+    },
+    "b": {
+      "item": "lowlands_clothing:cloth_fabric"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:plague_doctor_suit_chestplate",
+    "count": 1
+  }
+}

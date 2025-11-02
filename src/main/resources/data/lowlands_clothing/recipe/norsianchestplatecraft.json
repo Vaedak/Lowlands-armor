@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bbb",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:furpelt"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:norsian_armor_chestplate",
+    "count": 1
+  }
+}

@@ -4,11 +4,11 @@
  */
 package net.mcreator.lowlandsclothing.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -18,11 +18,11 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.lowlandsclothing.LowlandsClothingMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class LowlandsClothingModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LowlandsClothingMod.MODID);
-	public static final RegistryObject<CreativeModeTab> ARMORSOFTHE_LOWLANDS = REGISTRY.register("armorsofthe_lowlands", () -> CreativeModeTab.builder().title(Component.translatable("item_group.lowlands_clothing.armorsofthe_lowlands"))
-			.icon(() -> new ItemStack(LowlandsClothingModItems.GUARD_CAPTAIN_ARMOR_HELMET.get())).displayItems((parameters, tabData) -> {
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ARMORSOFTHE_LOWLANDS = REGISTRY.register("armorsofthe_lowlands", () -> CreativeModeTab.builder()
+			.title(Component.translatable("item_group.lowlands_clothing.armorsofthe_lowlands")).icon(() -> new ItemStack(LowlandsClothingModItems.GUARD_CAPTAIN_ARMOR_HELMET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(LowlandsClothingModItems.GUARD_CAPTAIN_ARMOR_HELMET.get());
 				tabData.accept(LowlandsClothingModItems.GUARD_CAPTAIN_ARMOR_CHESTPLATE.get());
 				tabData.accept(LowlandsClothingModItems.GUARD_CAPTAIN_ARMOR_LEGGINGS.get());

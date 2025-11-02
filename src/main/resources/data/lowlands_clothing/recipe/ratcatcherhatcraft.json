@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:cloth_fabric"
+    },
+    "b": {
+      "item": "lowlands_clothing:treatedleather"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:ratcatcherrobes_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "lowlands_clothing:furpelt"
+  },
+  "result": {
+    "id": "minecraft:leather",
+    "count": 1
+  }
+}

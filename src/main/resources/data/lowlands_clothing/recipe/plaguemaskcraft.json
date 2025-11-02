@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:cloth_fabric"
+    },
+    "b": {
+      "item": "lowlands_clothing:treatedleather"
+    },
+    "c": {
+      "tag": "minecraft:small_flowers"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:plague_doctor_suit_helmet",
+    "count": 1
+  }
+}

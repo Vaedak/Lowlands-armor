@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:cloth_fabric"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "minecraft:leather_leggings"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:mercenary_swordman_leggings",
+    "count": 1
+  }
+}

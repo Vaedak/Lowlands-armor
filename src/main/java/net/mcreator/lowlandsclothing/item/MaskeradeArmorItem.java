@@ -1,10 +1,14 @@
 
 package net.mcreator.lowlandsclothing.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -18,129 +22,128 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
+import net.minecraft.Util;
 
 import net.mcreator.lowlandsclothing.procedures.MaskeradeArmorfullwearProcedure;
+import net.mcreator.lowlandsclothing.init.LowlandsClothingModItems;
 import net.mcreator.lowlandsclothing.client.model.Modelmaskerade_armor_u;
 
-import java.util.function.Consumer;
 import java.util.Map;
 import java.util.List;
+import java.util.EnumMap;
 import java.util.Collections;
 
 import com.google.common.collect.Iterables;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class MaskeradeArmorItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 1);
+				map.put(ArmorItem.Type.LEGGINGS, 2);
+				map.put(ArmorItem.Type.CHESTPLATE, 3);
+				map.put(ArmorItem.Type.HELMET, 1);
+				map.put(ArmorItem.Type.BODY, 3);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_leather")), () -> Ingredient.of(new ItemStack(Items.GOLD_INGOT)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("lowlands_clothing:maskerade_armor"))), 0f, 0f);
+			registerHelper.register(ResourceLocation.parse("lowlands_clothing:maskerade_armor"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
+	@SubscribeEvent
+	public static void registerItemExtensions(RegisterClientExtensionsEvent event) {
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("head", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.MASKERADE_ARMOR_HELMET.get());
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).body,
+						"left_arm", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).arms_left, "right_arm",
+						new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).arm_right, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+						new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.MASKERADE_ARMOR_CHESTPLATE.get());
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("left_leg", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg0, "right_leg",
+								new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg1, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.MASKERADE_ARMOR_LEGGINGS.get());
+		event.registerItem(new IClientItemExtensions() {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+						Map.of("left_leg", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg0, "right_leg",
+								new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg1, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+								"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				armorModel.crouching = living.isShiftKeyDown();
+				armorModel.riding = defaultModel.riding;
+				armorModel.young = living.isBaby();
+				return armorModel;
+			}
+		}, LowlandsClothingModItems.MASKERADE_ARMOR_BOOTS.get());
+	}
+
 	public MaskeradeArmorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 9;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{1, 2, 3, 1}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 9;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_leather"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
-			}
-
-			@Override
-			public String getName() {
-				return "maskerade_armor";
-			}
-
-			@Override
-			public float getToughness() {
-				return 0f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends MaskeradeArmorItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties());
-		}
-
-		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/maskerade_armor_layer_1.png";
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(9)));
 		}
 	}
 
 	public static class Chestplate extends MaskeradeArmorItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(9)));
 		}
 
 		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).body,
-							"left_arm", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).arms_left, "right_arm",
-							new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).arm_right, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.literal("Gives hero of the village IV in raided village ."));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/maskerade_armor_layer_1.png";
 		}
 
 		@Override
@@ -154,61 +157,18 @@ public abstract class MaskeradeArmorItem extends ArmorItem {
 
 	public static class Leggings extends MaskeradeArmorItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(9)));
 		}
 
 		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg0, "right_leg",
-									new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg1, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/entities/maskerade_armor_layer_2.png";
+		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
+			return ResourceLocation.parse("lowlands_clothing:textures/entities/maskerade_armor_layer_2.png");
 		}
 	}
 
 	public static class Boots extends MaskeradeArmorItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties());
-		}
-
-		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg0, "right_leg",
-									new Modelmaskerade_armor_u(Minecraft.getInstance().getEntityModels().bakeLayer(Modelmaskerade_armor_u.LAYER_LOCATION)).leg1, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/models/armor/maskerade_armor_layer_1.png";
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(9)));
 		}
 	}
 }
