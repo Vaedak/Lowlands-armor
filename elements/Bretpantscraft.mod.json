@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": "CUSTOM:Treatedleather"
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
-        "value": "Blocks.WOOL#15"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.WOOL#15"
-      },
-      {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
       }
     ],
     "recipeReturnStack": {

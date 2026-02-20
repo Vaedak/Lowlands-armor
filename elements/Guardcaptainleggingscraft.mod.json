@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": "CUSTOM:Treatedleather"
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -30,13 +30,13 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       }
     ],
     "recipeReturnStack": {

@@ -122,7 +122,6 @@
         "files": [
           "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_helmet.json",
           "src/main/java/net/mcreator/lowlandsclothing/item/HighlandslongkiltItem.java",
-          "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_leggings.json",
           "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_boots.json",
           "src/main/resources/assets/lowlands_clothing/models/item/highlandslongkilt_chestplate.json"
         ]
@@ -1872,7 +1871,8 @@
         "files": [
           "src/main/resources/data/lowlands_clothing/recipes/cookingbear.json"
         ]
-      }
+      },
+      "path": "~/crafts"
     },
     {
       "name": "GrizzlyBearlootable",
@@ -1885,6 +1885,517 @@
           "src/main/resources/data/lowlands_clothing/loot_tables/entities/grizzly_bear.json"
         ]
       }
+    },
+    {
+      "name": "NetherbornPirate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherborn_pirate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/netherborn_pirate_boots.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/netherborn_pirate_helmet.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/NetherbornPirateItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/netherborn_pirate_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/netherborn_pirate_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "NetherbornPirateHelmetcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherborn_pirate_helmetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/netherborn_pirate_helmetcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "NetherbornPiratechestplate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherborn_piratechestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/netherborn_piratechestplate.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "NetherbornPirateLeggings",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherborn_pirate_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/netherborn_pirate_leggings.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "NetherbornPirateBoots",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherborn_pirate_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/netherborn_pirate_boots.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "FragilemagmaPlayerStartsToDestroy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragilemagma_player_starts_to_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/FragilemagmaPlayerStartsToDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fragilemagma",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragilemagma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/block/FragilemagmaBlock.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/fragilemagma.json",
+          "src/main/resources/assets/lowlands_clothing/blockstates/fragilemagma.json",
+          "src/main/resources/assets/lowlands_clothing/models/block/fragilemagma.json",
+          "src/main/resources/data/lowlands_clothing/loot_tables/blocks/fragilemagma.json"
+        ]
+      }
+    },
+    {
+      "name": "Netherbornpirateequiped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherbornpirateequiped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/NetherbornpirateequipedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FragilemagmaOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragilemagma_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/FragilemagmaOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwamplandFolksAttires",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swampland_folks_attires",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/swampland_folks_attires_helmet.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/SwamplandFolksAttiresItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/swampland_folks_attires_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/swampland_folks_attires_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "SwamplanFolksAttiresset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swamplan_folks_attiresset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/SwamplanFolksAttiressetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamekeeperAttires",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeper_attires",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/gamekeeper_attires_helmet.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/gamekeeper_attires_boots.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/GamekeeperAttiresItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/gamekeeper_attires_chestplate.json",
+          "src/main/resources/assets/lowlands_clothing/models/item/gamekeeper_attires_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "GamekeeperAttiresworn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeper_attiresworn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/procedures/GamekeeperAttireswornProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WoolenFabric",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woolen_fabric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/WoolenFabricItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/woolen_fabric.json"
+        ]
+      }
+    },
+    {
+      "name": "NeedleAndString",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "needle_and_string",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/NeedleAndStringItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/needle_and_string.json"
+        ]
+      }
+    },
+    {
+      "name": "NeedleAndStringCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "needle_and_string_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/needle_and_string_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "WoolenFabricCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woolen_fabric_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/woolen_fabric_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "QualityPlantFibers",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quality_plant_fibers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/QualityPlantFibersItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/quality_plant_fibers.json"
+        ]
+      }
+    },
+    {
+      "name": "LacedWoolenFabric",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laced_woolen_fabric",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/laced_woolen_fabric.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/LacedWoolenFabricItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LacedWoolenFabricCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laced_woolen_fabric_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/laced_woolen_fabric_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "SlimyFibers",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slimy_fibers",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lowlands_clothing/models/item/slimy_fibers.json",
+          "src/main/java/net/mcreator/lowlandsclothing/item/SlimyFibersItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WetlandsFabric",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wetlands_fabric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lowlandsclothing/item/WetlandsFabricItem.java",
+          "src/main/resources/assets/lowlands_clothing/models/item/wetlands_fabric.json"
+        ]
+      }
+    },
+    {
+      "name": "WetlandsFabricCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wetlands_fabric_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/wetlands_fabric_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "SwampfolksHelmetCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swampfolks_helmet_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/swampfolks_helmet_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "SwampfolksChestplateCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swampfolks_chestplate_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/swampfolks_chestplate_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "SwampfolksLeggingsCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swampfolks_leggings_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/swampfolks_leggings_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "GamekeeperHelmetcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeper_helmetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/gamekeeper_helmetcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "GamekeeperChestplatecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeper_chestplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/gamekeeper_chestplatecraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Gamekeeperchestplatevariationcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeperchestplatevariationcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/gamekeeperchestplatevariationcraft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "GamekeeperLeggingsCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeper_leggings_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/gamekeeper_leggings_craft.json"
+        ]
+      },
+      "path": "~/crafts"
+    },
+    {
+      "name": "Gamekeeperbootscraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamekeeperbootscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lowlands_clothing/recipes/gamekeeperbootscraft.json"
+        ]
+      },
+      "path": "~/crafts"
     }
   ],
   "variable_elements": [
@@ -1903,94 +2414,217 @@
   },
   "tab_element_order": {},
   "language_map": {
+    "ko_kr": {
+      "item.lowlands_clothing.needle_and_string": "Needle And String",
+      "item.lowlands_clothing.executorarmor_leggings": "처형자의 레깅스",
+      "item.lowlands_clothing.wald_knight_armor_chestplate": "숲 기사의 흉갑",
+      "item.lowlands_clothing.highlandslongkilt_boots": "하이랜더의 장화",
+      "item.lowlands_clothing.gamekeeper_attires_helmet": "Ratcatcher Hat",
+      "item.lowlands_clothing.mountainmenclothes_boots": "등반자의 장화",
+      "item.lowlands_clothing.kouign_amann": "퀸 아망",
+      "item.lowlands_clothing.executorarmor_helmet": "처형자의 카울",
+      "item.lowlands_clothing.highlandslongkilt_helmet": "하이랜더의 모자",
+      "item.lowlands_clothing.golden_kouign_amann": "황금 퀸 아망",
+      "item.lowlands_clothing.bret_clothes_boots": "브레튼 장화",
+      "item.lowlands_clothing.plague_doctor_suit_boots": "역병의사의 부츠",
+      "item.lowlands_clothing.highlandslongkilt_chestplate": "하이랜더의 조끼",
+      "item.lowlands_clothing.swampland_folks_attires_helmet": "Ratcatcher Hat",
+      "item.lowlands_clothing.executorarmor_boots": "처형자의 부츠",
+      "item.lowlands_clothing.axolotl_armor_chestplate": "아홀로틀 기사의 흉갑",
+      "item.lowlands_clothing.cookedgrizzlymeat": "익힌 회색곰 고기",
+      "item.lowlands_clothing.maskerade_armor_chestplate": "가면무도회 로브",
+      "item.lowlands_clothing.wald_knight_armor_leggings": "숲 기사의 레깅스",
+      "item.lowlands_clothing.norsian_armor_chestplate": "북부 기사의 흉갑",
+      "item.lowlands_clothing.depth_scaphander_boots": "심해 잠수복 부츠",
+      "item.lowlands_clothing.wingedcavaleryarmor_chestplate": "날개달린 기병의 흉갑",
+      "item.lowlands_clothing.slimy_fibers": "Slimy Fibers",
+      "item.lowlands_clothing.norsian_armor_boots": "북부 기사의 장화",
+      "item.lowlands_clothing.furnacemasteramor_chestplate": "화로 명장의 트로소",
+      "item.lowlands_clothing.treatedleather": "가공된 가죽",
+      "item.lowlands_clothing.wetlands_fabric": "Wetlands Fabric",
+      "item.lowlands_clothing.guard_captain_armor_helmet": "근위대장의 모자",
+      "item.lowlands_clothing.depth_scaphander_helmet": "심해 잠수복 투구",
+      "item.lowlands_clothing.woolen_fabric": "Woolen Fabric",
+      "item.lowlands_clothing.guard_captain_armor_chestplate": "근위대장의 흉갑",
+      "item.lowlands_clothing.penitent_rags_leggings": "참회자의 속바지",
+      "item.lowlands_clothing.bret_corsair_armor_chestplate": "브레튼 해적의 상의",
+      "item.lowlands_clothing.furnacemasteramor_leggings": "화로 명장의 레깅스",
+      "item.lowlands_clothing.penitent_rags_helmet": "참회자의 모자",
+      "item.lowlands_clothing.guard_captain_armor_boots": "근위대장의 부츠",
+      "item.lowlands_clothing.rawgrizzlymeat": "익히지 않은 회색곰 고기",
+      "item.lowlands_clothing.ratcatcherrobes_boots": "쥐잡이의 장화",
+      "item.lowlands_clothing.bret_corsair_armor_boots": "브레튼 해적의 부츠",
+      "item.lowlands_clothing.plague_doctor_suit_helmet": "역병의사의 가면",
+      "block.lowlands_clothing.fragilemagma": "Fragil Magma",
+      "item.lowlands_clothing.ratcatcherrobes_chestplate": "쥐잡이의 로브",
+      "item.lowlands_clothing.netherborn_pirate_leggings": "Netherborn Pirate Pants",
+      "item.lowlands_clothing.herbs_whip": "허브 줄기",
+      "item.lowlands_clothing.swampland_folks_attires_leggings": "Ratcatcher Pants",
+      "item.lowlands_clothing.netherborn_pirate_boots": "Netherborn Pirate Boots",
+      "item.lowlands_clothing.plague_doctor_suit_chestplate": "역병의사의 상의",
+      "item.lowlands_clothing.cloth_fabric": "옷감",
+      "item.lowlands_clothing.axolotl_armor_leggings": "아홀로틀 기사의 레깅스",
+      "item.lowlands_clothing.gamekeeper_attires_leggings": "Ratcatcher Pants",
+      "item.lowlands_clothing.snowtigerarmor_chestplate": "설호 흉갑",
+      "item.lowlands_clothing.guard_captain_armor_leggings": "근위대장의 레깅스",
+      "item.lowlands_clothing.depth_scaphander_chestplate": "심해 잠수복 흉갑",
+      "item.lowlands_clothing.snowtigerarmor_leggings": "설호 레깅스",
+      "item.lowlands_clothing.herbs_fiber": "식물 섬유",
+      "item.lowlands_clothing.quality_plant_fibers": "Quality Plant Fibers",
+      "item.lowlands_clothing.wald_knight_armor_boots": "숲 기사의 부츠",
+      "item.lowlands_clothing.norsian_armor_leggings": "북부 기사의 레깅스",
+      "item.lowlands_clothing.laced_woolen_fabric": "Woolen Fabric",
+      "item.lowlands_clothing.wingedcavaleryarmor_boots": "날개달린 기병의 부츠",
+      "item.lowlands_clothing.ratcatcherrobes_leggings": "쥐잡이의 바지",
+      "item.lowlands_clothing.axolotliron": "아홀로틀 철 주괴",
+      "item.lowlands_clothing.swampland_folks_attires_chestplate": "Ratcatcher Robes",
+      "item.lowlands_clothing.maskerade_armor_leggings": "가면무도회 레깅스",
+      "item.lowlands_clothing.furpelt": "털 가죽",
+      "item.lowlands_clothing.penitent_rags_chestplate": "참회자의 셔츠",
+      "item.lowlands_clothing.furnacemasteramor_boots": "화로 명장의 부츠",
+      "item.lowlands_clothing.gamekeeper_attires_boots": "Ratcatcher Shoes",
+      "item.lowlands_clothing.bret_clothes_helmet": "브레튼 모자",
+      "block.lowlands_clothing.invisiblelight": "불가시광",
+      "item.lowlands_clothing.ratcatcherrobes_helmet": "쥐잡이의 모자",
+      "item.lowlands_clothing.axolotl_armor_boots": "아홀로틀 기사의 부츠",
+      "item.lowlands_clothing.mountainmenclothes_leggings": "등반자의 바지",
+      "item.lowlands_clothing.snowtigerarmor_boots": "설호 장화",
+      "item.lowlands_clothing.mercenary_swordman_chestplate": "용병 검사의 흉갑",
+      "item.lowlands_clothing.executorarmor_chestplate": "처형자의 트로소",
+      "item.lowlands_clothing.mountainmenclothes_chestplate": "등반자의 코트",
+      "item.lowlands_clothing.grizzly_bear_spawn_egg": "회색곰 생성 알",
+      "item.lowlands_clothing.wingedcavaleryarmor_helmet": "날개달린 기병의 투구",
+      "item.lowlands_clothing.bret_corsair_armor_leggings": "브레튼 해적의 바지",
+      "item_group.lowlands_clothing.armorsofthe_lowlands": "저지대의 갑옷들",
+      "item.lowlands_clothing.axolotl_armor_helmet": "아홀로틀 기사의 투구",
+      "item.lowlands_clothing.norsian_armor_helmet": "북부 기사의 투구",
+      "item.lowlands_clothing.penitent_rags_boots": "참회자의 샌들",
+      "entity.lowlands_clothing.grizzly_bear": "회색곰",
+      "item.lowlands_clothing.wingedcavaleryarmor_leggings": "날개달린 기병의 레깅스",
+      "item.lowlands_clothing.maskerade_armor_boots": "가면무도회 부츠",
+      "item.lowlands_clothing.furnacemasteramor_helmet": "화로 명장의 투구",
+      "item.lowlands_clothing.depth_scaphander_leggings": "심해 잠수복 레깅스",
+      "item.lowlands_clothing.mercenary_swordman_helmet": "용병 검사의 투구",
+      "item.lowlands_clothing.sea_upgrade_template": "바다 대장장이 형판",
+      "item.lowlands_clothing.wald_knight_armor_helmet": "숲 기사의 모자",
+      "item.lowlands_clothing.netherborn_pirate_helmet": "Netherborn Pirate Hat",
+      "item.lowlands_clothing.mercenary_swordman_leggings": "용병 검사의 레깅스",
+      "item.lowlands_clothing.plague_doctor_suit_leggings": "역병의사의 바지",
+      "item.lowlands_clothing.mercenary_swordman_boots": "용병 검사의 부츠",
+      "item.lowlands_clothing.bret_clothes_leggings": "브레튼 바지",
+      "item.lowlands_clothing.maskerade_armor_helmet": "가면무도회 가면",
+      "item.lowlands_clothing.snowtigerarmor_helmet": "설호 투구",
+      "item.lowlands_clothing.bret_clothes_chestplate": "브레튼 조끼",
+      "item.lowlands_clothing.netherborn_pirate_chestplate": "Netherborn Pirate Top",
+      "item.lowlands_clothing.mountainmenclothes_helmet": "등반자의 모자",
+      "item.lowlands_clothing.gamekeeper_attires_chestplate": "Ratcatcher Robes",
+      "item.lowlands_clothing.bret_corsair_armor_helmet": "브레튼 해적의 모자"
+    },
     "en_us": {
+      "item.lowlands_clothing.needle_and_string": "Needle And String",
       "item.lowlands_clothing.executorarmor_leggings": "Executioner Leggings",
-      "item.lowlands_clothing.wingedcavaleryarmor_boots": "Winged Cavalery Boots",
-      "item.lowlands_clothing.ratcatcherrobes_leggings": "Ratcatcher Pants",
-      "item.lowlands_clothing.axolotliron": "Axolotl Iron Ingot",
       "item.lowlands_clothing.wald_knight_armor_chestplate": "Wald Knight Chestplate",
       "item.lowlands_clothing.highlandslongkilt_boots": "Highlander Boots",
-      "item.lowlands_clothing.maskerade_armor_leggings": "Masquerade Robes",
+      "item.lowlands_clothing.gamekeeper_attires_helmet": "Gamekeeper Hat",
       "item.lowlands_clothing.mountainmenclothes_boots": "Mountainmen Boots",
       "item.lowlands_clothing.kouign_amann": "Kouign-Amann",
-      "item.lowlands_clothing.furpelt": "Fur Pelt",
       "item.lowlands_clothing.executorarmor_helmet": "Executioner Cowl",
-      "item.lowlands_clothing.penitent_rags_chestplate": "Penitent Shirt",
       "item.lowlands_clothing.highlandslongkilt_helmet": "Highlander Hat",
       "item.lowlands_clothing.golden_kouign_amann": "Golden Kouign-Amann",
       "item.lowlands_clothing.bret_clothes_boots": "Bret Boots",
-      "item.lowlands_clothing.furnacemasteramor_boots": "Furnace Master Boots",
-      "item.lowlands_clothing.bret_clothes_helmet": "Bret Hat",
-      "block.lowlands_clothing.invisiblelight": "Invisiblelight",
       "item.lowlands_clothing.plague_doctor_suit_boots": "Plague Doctor Shoes",
       "item.lowlands_clothing.highlandslongkilt_chestplate": "Highlander Tunic",
-      "item.lowlands_clothing.ratcatcherrobes_helmet": "Ratcatcher Hat",
+      "item.lowlands_clothing.swampland_folks_attires_helmet": "Swamplandfolks Mask",
       "item.lowlands_clothing.executorarmor_boots": "Executioner Boots",
       "item.lowlands_clothing.axolotl_armor_chestplate": "Axolotl Knight Chestplate",
       "item.lowlands_clothing.cookedgrizzlymeat": "Cooked Grizzly",
-      "item.lowlands_clothing.axolotl_armor_boots": "Axolotl Knight Boots",
       "item.lowlands_clothing.maskerade_armor_chestplate": "Masquerade Robes",
-      "item.lowlands_clothing.highlandslongkilt_leggings": "Highlander Kilt",
       "item.lowlands_clothing.wald_knight_armor_leggings": "Wald Knight Pants",
-      "item.lowlands_clothing.mountainmenclothes_leggings": "Mountainmen Pants",
       "item.lowlands_clothing.norsian_armor_chestplate": "Norsian Knight Chestplate",
-      "item.lowlands_clothing.snowtigerarmor_boots": "Snow Tiger Boots",
       "item.lowlands_clothing.depth_scaphander_boots": "Depth Scaphander Boots",
       "item.lowlands_clothing.wingedcavaleryarmor_chestplate": "Winged Cavalery Chestplate",
-      "item.lowlands_clothing.mercenary_swordman_chestplate": "Mercenary Swordsman Chestplate",
-      "item.lowlands_clothing.executorarmor_chestplate": "Executioner Torso",
-      "item.lowlands_clothing.mountainmenclothes_chestplate": "Mountainmen Coat",
+      "item.lowlands_clothing.slimy_fibers": "Slimy Fibers",
       "item.lowlands_clothing.norsian_armor_boots": "Norsian Knight Boots",
-      "item.lowlands_clothing.grizzly_bear_spawn_egg": "Grizzly Bear Spawn Egg",
-      "item.lowlands_clothing.wingedcavaleryarmor_helmet": "Winged Cavalery Helmet",
       "item.lowlands_clothing.furnacemasteramor_chestplate": "Furnace Master Torso",
-      "item.lowlands_clothing.bret_corsair_armor_leggings": "Bret Corsair Pants",
-      "item_group.lowlands_clothing.armorsofthe_lowlands": "Armors of the Lowlands",
-      "item.lowlands_clothing.axolotl_armor_helmet": "Axolotl Knight Helmet",
       "item.lowlands_clothing.treatedleather": "Treated Leather",
-      "item.lowlands_clothing.norsian_armor_helmet": "Norsian Knight Helmet",
-      "item.lowlands_clothing.penitent_rags_boots": "Penitent Sandals",
-      "entity.lowlands_clothing.grizzly_bear": "Grizzly Bear",
+      "item.lowlands_clothing.wetlands_fabric": "Wetlands Fabric",
       "item.lowlands_clothing.guard_captain_armor_helmet": "Guard\u0027s Captain Hat",
       "item.lowlands_clothing.depth_scaphander_helmet": "Depth Scaphander Helmet",
+      "item.lowlands_clothing.woolen_fabric": "Woolen Fabric",
       "item.lowlands_clothing.guard_captain_armor_chestplate": "Guard\u0027s Captain Chestplate",
       "item.lowlands_clothing.penitent_rags_leggings": "Penitent Underpants",
       "item.lowlands_clothing.bret_corsair_armor_chestplate": "Bret Corsair Top",
       "item.lowlands_clothing.furnacemasteramor_leggings": "Furnace Master Leggings",
       "item.lowlands_clothing.penitent_rags_helmet": "Penitent Cap",
       "item.lowlands_clothing.guard_captain_armor_boots": "Guard\u0027s Captain Boots",
-      "item.lowlands_clothing.wingedcavaleryarmor_leggings": "Winged Cavalery Pants",
       "item.lowlands_clothing.rawgrizzlymeat": "Raw Grizzly",
+      "item.lowlands_clothing.ratcatcherrobes_boots": "Ratcatcher Shoes",
+      "item.lowlands_clothing.bret_corsair_armor_boots": "Bret Corsair Boots",
+      "item.lowlands_clothing.plague_doctor_suit_helmet": "Plague Doctor Mask",
+      "block.lowlands_clothing.fragilemagma": "Fragil Magma",
+      "item.lowlands_clothing.ratcatcherrobes_chestplate": "Ratcatcher Robes",
+      "item.lowlands_clothing.netherborn_pirate_leggings": "Netherborn Pirate Pants",
+      "item.lowlands_clothing.herbs_whip": "Grass Whip",
+      "item.lowlands_clothing.swampland_folks_attires_leggings": "Swamplandfolks Pants",
+      "item.lowlands_clothing.netherborn_pirate_boots": "Netherborn Pirate Boots",
+      "item.lowlands_clothing.plague_doctor_suit_chestplate": "Plague Doctor Apron",
+      "item.lowlands_clothing.cloth_fabric": "Cloth Fabric",
+      "item.lowlands_clothing.axolotl_armor_leggings": "Axolotl Knight Pants",
+      "item.lowlands_clothing.gamekeeper_attires_leggings": "Gamekeeper Pants",
+      "item.lowlands_clothing.snowtigerarmor_chestplate": "Snow Tiger Chestplate",
+      "item.lowlands_clothing.guard_captain_armor_leggings": "Guard\u0027s Captain Pants",
+      "item.lowlands_clothing.depth_scaphander_chestplate": "Depth Scaphander Chestplate",
+      "item.lowlands_clothing.snowtigerarmor_leggings": "Snow Tiger Leggings",
+      "item.lowlands_clothing.herbs_fiber": "Plant Fibers",
+      "item.lowlands_clothing.quality_plant_fibers": "Quality Plant Fibers",
+      "item.lowlands_clothing.wald_knight_armor_boots": "Wald Knight Boots",
+      "item.lowlands_clothing.norsian_armor_leggings": "Norsian Knight Pants",
+      "item.lowlands_clothing.laced_woolen_fabric": "Laced Woolen Fabric",
+      "item.lowlands_clothing.wingedcavaleryarmor_boots": "Winged Cavalery Boots",
+      "item.lowlands_clothing.ratcatcherrobes_leggings": "Ratcatcher Pants",
+      "item.lowlands_clothing.axolotliron": "Axolotl Iron Ingot",
+      "item.lowlands_clothing.swampland_folks_attires_chestplate": "Swamplandfolks Jacket",
+      "item.lowlands_clothing.maskerade_armor_leggings": "Masquerade Robes",
+      "item.lowlands_clothing.furpelt": "Fur Pelt",
+      "item.lowlands_clothing.penitent_rags_chestplate": "Penitent Shirt",
+      "item.lowlands_clothing.furnacemasteramor_boots": "Furnace Master Boots",
+      "item.lowlands_clothing.gamekeeper_attires_boots": "Gamekeeper Shoes",
+      "item.lowlands_clothing.bret_clothes_helmet": "Bret Hat",
+      "block.lowlands_clothing.invisiblelight": "Invisiblelight",
+      "item.lowlands_clothing.ratcatcherrobes_helmet": "Ratcatcher Hat",
+      "item.lowlands_clothing.axolotl_armor_boots": "Axolotl Knight Boots",
+      "item.lowlands_clothing.mountainmenclothes_leggings": "Mountainmen Pants",
+      "item.lowlands_clothing.snowtigerarmor_boots": "Snow Tiger Boots",
+      "item.lowlands_clothing.mercenary_swordman_chestplate": "Mercenary Swordsman Chestplate",
+      "item.lowlands_clothing.executorarmor_chestplate": "Executioner Torso",
+      "item.lowlands_clothing.mountainmenclothes_chestplate": "Mountainmen Coat",
+      "item.lowlands_clothing.grizzly_bear_spawn_egg": "Grizzly Bear Spawn Egg",
+      "item.lowlands_clothing.wingedcavaleryarmor_helmet": "Winged Cavalery Helmet",
+      "item.lowlands_clothing.bret_corsair_armor_leggings": "Bret Corsair Pants",
+      "item_group.lowlands_clothing.armorsofthe_lowlands": "Armors of the Lowlands",
+      "item.lowlands_clothing.axolotl_armor_helmet": "Axolotl Knight Helmet",
+      "item.lowlands_clothing.norsian_armor_helmet": "Norsian Knight Helmet",
+      "item.lowlands_clothing.penitent_rags_boots": "Penitent Sandals",
+      "entity.lowlands_clothing.grizzly_bear": "Grizzly Bear",
+      "item.lowlands_clothing.wingedcavaleryarmor_leggings": "Winged Cavalery Pants",
       "item.lowlands_clothing.maskerade_armor_boots": "Masquerade Shoes",
       "item.lowlands_clothing.furnacemasteramor_helmet": "Furnace Master Helmet",
       "item.lowlands_clothing.depth_scaphander_leggings": "Depth Scaphander Leggings",
-      "item.lowlands_clothing.ratcatcherrobes_boots": "Ratcatcher Shoes",
       "item.lowlands_clothing.mercenary_swordman_helmet": "Mercenary Swordsman Helmet",
-      "item.lowlands_clothing.plague_doctor_suit_helmet": "Plague Doctor Mask",
-      "item.lowlands_clothing.bret_corsair_armor_boots": "Bret Corsair Boots",
       "item.lowlands_clothing.sea_upgrade_template": "Sea Upgrade Template",
       "item.lowlands_clothing.wald_knight_armor_helmet": "Wald Knight Hat",
-      "item.lowlands_clothing.ratcatcherrobes_chestplate": "Ratcatcher Robes",
-      "item.lowlands_clothing.herbs_whip": "Herbs Whip",
+      "item.lowlands_clothing.netherborn_pirate_helmet": "Netherborn Pirate Hat",
       "item.lowlands_clothing.mercenary_swordman_leggings": "Mercenary Swordsman Pants",
       "item.lowlands_clothing.plague_doctor_suit_leggings": "Plague Doctor Pants",
       "item.lowlands_clothing.mercenary_swordman_boots": "Mercenary Swordsman Boots",
       "item.lowlands_clothing.bret_clothes_leggings": "Bret Pants",
-      "item.lowlands_clothing.plague_doctor_suit_chestplate": "Plague Doctor Apron",
-      "item.lowlands_clothing.cloth_fabric": "Cloth Fabric",
-      "item.lowlands_clothing.axolotl_armor_leggings": "Axolotl Knight Pants",
       "item.lowlands_clothing.maskerade_armor_helmet": "Masquerade Mask",
-      "item.lowlands_clothing.snowtigerarmor_chestplate": "Snow Tiger Chestplate",
-      "item.lowlands_clothing.guard_captain_armor_leggings": "Guard\u0027s Captain Pants",
       "item.lowlands_clothing.snowtigerarmor_helmet": "Snow Tiger Helmet",
       "item.lowlands_clothing.bret_clothes_chestplate": "Bret Vest",
+      "item.lowlands_clothing.netherborn_pirate_chestplate": "Netherborn Pirate Top",
       "item.lowlands_clothing.mountainmenclothes_helmet": "Mountainmen Hat",
-      "item.lowlands_clothing.depth_scaphander_chestplate": "Depth Scaphander Chestplate",
-      "item.lowlands_clothing.bret_corsair_armor_helmet": "Bret Corsair Hat",
-      "item.lowlands_clothing.snowtigerarmor_leggings": "Snow Tiger Leggings",
-      "item.lowlands_clothing.herbs_fiber": "Plant Fibers",
-      "item.lowlands_clothing.wald_knight_armor_boots": "Wald Knight Boots",
-      "item.lowlands_clothing.norsian_armor_leggings": "Norsian Knight Pants"
+      "item.lowlands_clothing.gamekeeper_attires_chestplate": "Gamekeeper Shirt",
+      "item.lowlands_clothing.bret_corsair_armor_helmet": "Bret Corsair Hat"
     }
   },
   "foldersRoot": {

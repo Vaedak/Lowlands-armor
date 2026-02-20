@@ -107,6 +107,11 @@ public abstract class MaskeradeArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "lowlands_clothing:textures/models/armor/maskerade_armor_layer_1.png";
 		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
+		}
 	}
 
 	public static class Chestplate extends MaskeradeArmorItem {
@@ -141,6 +146,11 @@ public abstract class MaskeradeArmorItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "lowlands_clothing:textures/models/armor/maskerade_armor_layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
 		}
 
 		@Override
@@ -180,6 +190,11 @@ public abstract class MaskeradeArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "lowlands_clothing:textures/entities/maskerade_armor_layer_2.png";
 		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
+		}
 	}
 
 	public static class Boots extends MaskeradeArmorItem {
@@ -209,6 +224,11 @@ public abstract class MaskeradeArmorItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "lowlands_clothing:textures/models/armor/maskerade_armor_layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
 		}
 	}
 }

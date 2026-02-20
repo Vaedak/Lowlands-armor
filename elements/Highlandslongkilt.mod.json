@@ -6,8 +6,8 @@
     "textureHelmet": "highlands_suit_hat",
     "enableBody": true,
     "textureBody": "highlands_suit_shirt",
-    "enableLeggings": true,
-    "textureLeggings": "highlands_suit_kilt",
+    "enableLeggings": false,
+    "textureLeggings": "",
     "enableBoots": true,
     "textureBoots": "highlands_suit_boots",
     "creativeTabs": [

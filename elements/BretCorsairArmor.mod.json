@@ -10,9 +10,6 @@
     "textureLeggings": "bret_corsair_leggings",
     "enableBoots": true,
     "textureBoots": "bret_corsair_boots",
-    "onBodyTick": {
-      "name": "Waldknightarmortick"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:ArmorsoftheLowlands"

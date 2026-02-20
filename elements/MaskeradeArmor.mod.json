@@ -78,16 +78,16 @@
       "fixedValue": false
     },
     "helmetPiglinNeutral": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "bodyPiglinNeutral": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "leggingsPiglinNeutral": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "bootsPiglinNeutral": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "maxDamage": 9,
     "damageValueHelmet": 1,

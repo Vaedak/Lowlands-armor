@@ -3,11 +3,13 @@
   "biomes": [
     "dark_forest",
     "old_growth_pine_taiga",
-    "old_growth_spruce_taiga"
+    "old_growth_spruce_taiga",
+    "snowy_taiga",
+    "taiga"
   ],
   "spawners": {
     "type": "lowlands_clothing:grizzly_bear",
-    "weight": 8,
+    "weight": 30,
     "minCount": 1,
     "maxCount": 3
   }

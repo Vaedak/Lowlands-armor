@@ -11,11 +11,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.lowlandsclothing.block.InvisiblelightBlock;
+import net.mcreator.lowlandsclothing.block.FragilemagmaBlock;
 import net.mcreator.lowlandsclothing.LowlandsClothingMod;
 
 public class LowlandsClothingModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, LowlandsClothingMod.MODID);
 	public static final RegistryObject<Block> INVISIBLELIGHT = REGISTRY.register("invisiblelight", () -> new InvisiblelightBlock());
+	public static final RegistryObject<Block> FRAGILEMAGMA = REGISTRY.register("fragilemagma", () -> new FragilemagmaBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

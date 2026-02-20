@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:wetlands_fabric"
+    },
+    "b": {
+      "item": "lowlands_clothing:treatedleather"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:swampland_folks_attires_leggings",
+    "count": 1
+  }
+}

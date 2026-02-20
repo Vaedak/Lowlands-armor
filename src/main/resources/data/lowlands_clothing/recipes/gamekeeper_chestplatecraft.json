@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:laced_woolen_fabric"
+    },
+    "b": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:gamekeeper_attires_chestplate",
+    "count": 1
+  }
+}

@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
-        "value": "Blocks.WOOL#15"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": "CUSTOM:ClothFabric"

@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:QualityPlantFibers"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": "CUSTOM:NeedleAndString"
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:QualityPlantFibers"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LacedWoolenFabric"
+    },
+    "name": "laced_woolen_fabric_craft",
+    "namespace": "mod"
+  }
+}

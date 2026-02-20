@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lowlands_clothing:block/obsidian_magma",
+    "up": "lowlands_clothing:block/obsidian_magma",
+    "north": "lowlands_clothing:block/obsidian_magma",
+    "east": "lowlands_clothing:block/obsidian_magma",
+    "south": "lowlands_clothing:block/obsidian_magma",
+    "west": "lowlands_clothing:block/obsidian_magma",
+    "particle": "lowlands_clothing:block/obsidian_magma"
+  },
+  "render_type": "solid"
+}

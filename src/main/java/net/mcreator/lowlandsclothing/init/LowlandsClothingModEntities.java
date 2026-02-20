@@ -23,7 +23,7 @@ import net.mcreator.lowlandsclothing.LowlandsClothingMod;
 public class LowlandsClothingModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, LowlandsClothingMod.MODID);
 	public static final RegistryObject<EntityType<GrizzlyBearEntity>> GRIZZLY_BEAR = register("grizzly_bear",
-			EntityType.Builder.<GrizzlyBearEntity>of(GrizzlyBearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrizzlyBearEntity::new)
+			EntityType.Builder.<GrizzlyBearEntity>of(GrizzlyBearEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrizzlyBearEntity::new)
 
 					.sized(1f, 1f));
 

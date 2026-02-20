@@ -130,36 +130,6 @@ public abstract class HighlandslongkiltItem extends ArmorItem {
 		}
 	}
 
-	public static class Leggings extends HighlandslongkiltItem {
-		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
-		}
-
-		@Override
-		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-			consumer.accept(new IClientItemExtensions() {
-				@Override
-				@OnlyIn(Dist.CLIENT)
-				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelHighlands_longkilt(Minecraft.getInstance().getEntityModels().bakeLayer(ModelHighlands_longkilt.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new ModelHighlands_longkilt(Minecraft.getInstance().getEntityModels().bakeLayer(ModelHighlands_longkilt.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
-					armorModel.crouching = living.isShiftKeyDown();
-					armorModel.riding = defaultModel.riding;
-					armorModel.young = living.isBaby();
-					return armorModel;
-				}
-			});
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "lowlands_clothing:textures/entities/highlands_suit_layer_2.png";
-		}
-	}
-
 	public static class Boots extends HighlandslongkiltItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties());

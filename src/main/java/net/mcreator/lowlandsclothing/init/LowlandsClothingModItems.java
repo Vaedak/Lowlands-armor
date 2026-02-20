@@ -13,25 +13,34 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.lowlandsclothing.item.WoolenFabricItem;
 import net.mcreator.lowlandsclothing.item.WingedcavaleryarmorItem;
+import net.mcreator.lowlandsclothing.item.WetlandsFabricItem;
 import net.mcreator.lowlandsclothing.item.WaldKnightArmorItem;
 import net.mcreator.lowlandsclothing.item.TreatedleatherItem;
+import net.mcreator.lowlandsclothing.item.SwamplandFolksAttiresItem;
 import net.mcreator.lowlandsclothing.item.SnowtigerarmorItem;
+import net.mcreator.lowlandsclothing.item.SlimyFibersItem;
 import net.mcreator.lowlandsclothing.item.SeaUpgradeTemplateItem;
 import net.mcreator.lowlandsclothing.item.RawgrizzlymeatItem;
 import net.mcreator.lowlandsclothing.item.RatcatcherrobesItem;
+import net.mcreator.lowlandsclothing.item.QualityPlantFibersItem;
 import net.mcreator.lowlandsclothing.item.PlagueDoctorSuitItem;
 import net.mcreator.lowlandsclothing.item.PenitentRagsItem;
 import net.mcreator.lowlandsclothing.item.NorsianArmorItem;
+import net.mcreator.lowlandsclothing.item.NetherbornPirateItem;
+import net.mcreator.lowlandsclothing.item.NeedleAndStringItem;
 import net.mcreator.lowlandsclothing.item.MountainmenclothesItem;
 import net.mcreator.lowlandsclothing.item.MercenarySwordmanItem;
 import net.mcreator.lowlandsclothing.item.MaskeradeArmorItem;
+import net.mcreator.lowlandsclothing.item.LacedWoolenFabricItem;
 import net.mcreator.lowlandsclothing.item.KouignAmannItem;
 import net.mcreator.lowlandsclothing.item.HighlandslongkiltItem;
 import net.mcreator.lowlandsclothing.item.HerbsWhipItem;
 import net.mcreator.lowlandsclothing.item.HerbsFiberItem;
 import net.mcreator.lowlandsclothing.item.GuardCaptainArmorItem;
 import net.mcreator.lowlandsclothing.item.GoldenKouignAmannItem;
+import net.mcreator.lowlandsclothing.item.GamekeeperAttiresItem;
 import net.mcreator.lowlandsclothing.item.FurpeltItem;
 import net.mcreator.lowlandsclothing.item.FurnacemasteramorItem;
 import net.mcreator.lowlandsclothing.item.ExecutorarmorItem;
@@ -76,7 +85,6 @@ public class LowlandsClothingModItems {
 	public static final RegistryObject<Item> FURNACEMASTERAMOR_BOOTS = REGISTRY.register("furnacemasteramor_boots", () -> new FurnacemasteramorItem.Boots());
 	public static final RegistryObject<Item> HIGHLANDSLONGKILT_HELMET = REGISTRY.register("highlandslongkilt_helmet", () -> new HighlandslongkiltItem.Helmet());
 	public static final RegistryObject<Item> HIGHLANDSLONGKILT_CHESTPLATE = REGISTRY.register("highlandslongkilt_chestplate", () -> new HighlandslongkiltItem.Chestplate());
-	public static final RegistryObject<Item> HIGHLANDSLONGKILT_LEGGINGS = REGISTRY.register("highlandslongkilt_leggings", () -> new HighlandslongkiltItem.Leggings());
 	public static final RegistryObject<Item> HIGHLANDSLONGKILT_BOOTS = REGISTRY.register("highlandslongkilt_boots", () -> new HighlandslongkiltItem.Boots());
 	public static final RegistryObject<Item> PLAGUE_DOCTOR_SUIT_HELMET = REGISTRY.register("plague_doctor_suit_helmet", () -> new PlagueDoctorSuitItem.Helmet());
 	public static final RegistryObject<Item> PLAGUE_DOCTOR_SUIT_CHESTPLATE = REGISTRY.register("plague_doctor_suit_chestplate", () -> new PlagueDoctorSuitItem.Chestplate());
@@ -131,6 +139,24 @@ public class LowlandsClothingModItems {
 	public static final RegistryObject<Item> GOLDEN_KOUIGN_AMANN = REGISTRY.register("golden_kouign_amann", () -> new GoldenKouignAmannItem());
 	public static final RegistryObject<Item> RAWGRIZZLYMEAT = REGISTRY.register("rawgrizzlymeat", () -> new RawgrizzlymeatItem());
 	public static final RegistryObject<Item> COOKEDGRIZZLYMEAT = REGISTRY.register("cookedgrizzlymeat", () -> new CookedgrizzlymeatItem());
+	public static final RegistryObject<Item> NETHERBORN_PIRATE_HELMET = REGISTRY.register("netherborn_pirate_helmet", () -> new NetherbornPirateItem.Helmet());
+	public static final RegistryObject<Item> NETHERBORN_PIRATE_CHESTPLATE = REGISTRY.register("netherborn_pirate_chestplate", () -> new NetherbornPirateItem.Chestplate());
+	public static final RegistryObject<Item> NETHERBORN_PIRATE_LEGGINGS = REGISTRY.register("netherborn_pirate_leggings", () -> new NetherbornPirateItem.Leggings());
+	public static final RegistryObject<Item> NETHERBORN_PIRATE_BOOTS = REGISTRY.register("netherborn_pirate_boots", () -> new NetherbornPirateItem.Boots());
+	public static final RegistryObject<Item> FRAGILEMAGMA = block(LowlandsClothingModBlocks.FRAGILEMAGMA);
+	public static final RegistryObject<Item> SWAMPLAND_FOLKS_ATTIRES_HELMET = REGISTRY.register("swampland_folks_attires_helmet", () -> new SwamplandFolksAttiresItem.Helmet());
+	public static final RegistryObject<Item> SWAMPLAND_FOLKS_ATTIRES_CHESTPLATE = REGISTRY.register("swampland_folks_attires_chestplate", () -> new SwamplandFolksAttiresItem.Chestplate());
+	public static final RegistryObject<Item> SWAMPLAND_FOLKS_ATTIRES_LEGGINGS = REGISTRY.register("swampland_folks_attires_leggings", () -> new SwamplandFolksAttiresItem.Leggings());
+	public static final RegistryObject<Item> GAMEKEEPER_ATTIRES_HELMET = REGISTRY.register("gamekeeper_attires_helmet", () -> new GamekeeperAttiresItem.Helmet());
+	public static final RegistryObject<Item> GAMEKEEPER_ATTIRES_CHESTPLATE = REGISTRY.register("gamekeeper_attires_chestplate", () -> new GamekeeperAttiresItem.Chestplate());
+	public static final RegistryObject<Item> GAMEKEEPER_ATTIRES_LEGGINGS = REGISTRY.register("gamekeeper_attires_leggings", () -> new GamekeeperAttiresItem.Leggings());
+	public static final RegistryObject<Item> GAMEKEEPER_ATTIRES_BOOTS = REGISTRY.register("gamekeeper_attires_boots", () -> new GamekeeperAttiresItem.Boots());
+	public static final RegistryObject<Item> WOOLEN_FABRIC = REGISTRY.register("woolen_fabric", () -> new WoolenFabricItem());
+	public static final RegistryObject<Item> NEEDLE_AND_STRING = REGISTRY.register("needle_and_string", () -> new NeedleAndStringItem());
+	public static final RegistryObject<Item> QUALITY_PLANT_FIBERS = REGISTRY.register("quality_plant_fibers", () -> new QualityPlantFibersItem());
+	public static final RegistryObject<Item> LACED_WOOLEN_FABRIC = REGISTRY.register("laced_woolen_fabric", () -> new LacedWoolenFabricItem());
+	public static final RegistryObject<Item> SLIMY_FIBERS = REGISTRY.register("slimy_fibers", () -> new SlimyFibersItem());
+	public static final RegistryObject<Item> WETLANDS_FABRIC = REGISTRY.register("wetlands_fabric", () -> new WetlandsFabricItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

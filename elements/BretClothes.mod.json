@@ -10,9 +10,6 @@
     "textureLeggings": "bret_leggings",
     "enableBoots": true,
     "textureBoots": "bret_boots",
-    "onBodyTick": {
-      "name": "Waldknightarmortick"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:ArmorsoftheLowlands"

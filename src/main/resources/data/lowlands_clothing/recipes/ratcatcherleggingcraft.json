@@ -11,7 +11,7 @@
       "item": "lowlands_clothing:cloth_fabric"
     },
     "b": {
-      "item": "minecraft:white_wool"
+      "item": "lowlands_clothing:woolen_fabric"
     }
   },
   "result": {

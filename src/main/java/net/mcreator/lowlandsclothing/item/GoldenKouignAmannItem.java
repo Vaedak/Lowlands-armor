@@ -12,7 +12,7 @@ import net.mcreator.lowlandsclothing.procedures.GoldenKouignAmannPlayerFinishesU
 
 public class GoldenKouignAmannItem extends Item {
 	public GoldenKouignAmannItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(5).saturationMod(8f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(16f).alwaysEat().build()));
 	}
 
 	@Override

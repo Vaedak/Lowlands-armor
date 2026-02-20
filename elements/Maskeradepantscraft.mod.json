@@ -12,22 +12,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.WOOL#14"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
-        "value": "Blocks.WOOL#14"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
-        "value": "Blocks.WOOL#14"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
-        "value": "Blocks.WOOL#14"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.WOOL#14"
+        "value": "CUSTOM:WoolenFabric"
       },
       {
         "value": "Items.GOLD_INGOT"

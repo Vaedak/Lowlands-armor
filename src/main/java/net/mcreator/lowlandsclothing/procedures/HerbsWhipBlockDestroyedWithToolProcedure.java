@@ -18,6 +18,30 @@ public class HerbsWhipBlockDestroyedWithToolProcedure {
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
+			} else if (Math.random() < 0.04) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(LowlandsClothingModItems.QUALITY_PLANT_FIBERS.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.GRASS) {
+			if (Math.random() < 0.1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(LowlandsClothingModItems.QUALITY_PLANT_FIBERS.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.LILY_PAD || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SEAGRASS) {
+			if (Math.random() < 0.25) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(LowlandsClothingModItems.SLIMY_FIBERS.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		}
 	}
