@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:feather"
+    },
+    "c": {
+      "item": "minecraft:iron_helmet"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:wingedcavaleryarmor_helmet",
+    "count": 1
+  }
+}

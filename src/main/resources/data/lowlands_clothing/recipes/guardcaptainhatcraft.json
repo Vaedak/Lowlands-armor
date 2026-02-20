@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aab",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:feather"
+    },
+    "b": {
+      "item": "lowlands_clothing:treatedleather"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:guard_captain_armor_helmet",
+    "count": 1
+  }
+}

@@ -11,14 +11,14 @@
       "item": "lowlands_clothing:herbs_fiber"
     },
     "b": {
-      "item": "lowlands_clothing:deleted_mod_element"
+      "item": "lowlands_clothing:slimy_fibers"
     },
     "c": {
-      "item": "lowlands_clothing:deleted_mod_element"
+      "item": "lowlands_clothing:needle_and_string"
     }
   },
   "result": {
-    "item": "lowlands_clothing:deleted_mod_element",
+    "item": "lowlands_clothing:wetlands_fabric",
     "count": 2
   }
 }

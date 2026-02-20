@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "lowlands_clothing:cloth_fabric"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:penitent_rags_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "lowlands_clothing:sea_upgrade_template"
+  },
+  "base": {
+    "item": "minecraft:copper_ingot"
+  },
+  "addition": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "result": {
+    "item": "lowlands_clothing:depth_scaphander_chestplate"
+  }
+}
