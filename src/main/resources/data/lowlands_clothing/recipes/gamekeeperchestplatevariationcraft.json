@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "lowlands_clothing:laced_woolen_fabric"
+      "item": "lowlands_clothing:deleted_mod_element"
     },
     "b": {
       "item": "minecraft:leather"
@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "lowlands_clothing:gamekeeper_attires_chestplate",
+    "item": "lowlands_clothing:deleted_mod_element_chestplate",
     "count": 1
   }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:cloth_fabric"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:executorarmor_leggings",
+    "count": 1
+  }
+}

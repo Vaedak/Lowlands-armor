@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aab",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:green_wool"
+    },
+    "b": {
+      "item": "lowlands_clothing:cloth_fabric"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:highlandslongkilt_chestplate",
+    "count": 1
+  }
+}

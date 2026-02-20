@@ -8,10 +8,10 @@
   ],
   "key": {
     "a": {
-      "item": "lowlands_clothing:quality_plant_fibers"
+      "item": "lowlands_clothing:deleted_mod_element"
     },
     "b": {
-      "item": "lowlands_clothing:woolen_fabric"
+      "item": "lowlands_clothing:deleted_mod_element"
     },
     "c": {
       "item": "lowlands_clothing:needle_and_string"

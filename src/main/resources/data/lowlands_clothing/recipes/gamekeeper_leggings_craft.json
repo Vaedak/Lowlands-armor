@@ -11,11 +11,11 @@
       "item": "minecraft:leather"
     },
     "b": {
-      "item": "lowlands_clothing:laced_woolen_fabric"
+      "item": "lowlands_clothing:deleted_mod_element"
     }
   },
   "result": {
-    "item": "lowlands_clothing:gamekeeper_attires_leggings",
+    "item": "lowlands_clothing:deleted_mod_element_leggings",
     "count": 1
   }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:treatedleather"
+    },
+    "b": {
+      "item": "minecraft:iron_boots"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:furnacemasteramor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "tag": "minecraft:saplings"
+    },
+    "d": {
+      "item": "minecraft:iron_helmet"
+    }
+  },
+  "result": {
+    "id": "lowlands_clothing:wald_knight_armor_helmet",
+    "count": 1
+  }
+}

@@ -7,14 +7,14 @@
   ],
   "key": {
     "a": {
-      "item": "lowlands_clothing:laced_woolen_fabric"
+      "item": "lowlands_clothing:deleted_mod_element"
     },
     "b": {
       "item": "lowlands_clothing:treatedleather"
     }
   },
   "result": {
-    "item": "lowlands_clothing:gamekeeper_attires_boots",
+    "item": "lowlands_clothing:deleted_mod_element_boots",
     "count": 1
   }
 }

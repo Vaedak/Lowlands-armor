@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "lowlands_clothing:sea_upgrade_template"
+  },
+  "base": {
+    "item": "lowlands_clothing:axolotliron"
+  },
+  "addition": {
+    "item": "lowlands_clothing:bret_clothes_boots"
+  },
+  "result": {
+    "id": "lowlands_clothing:bret_corsair_armor_boots"
+  }
+}

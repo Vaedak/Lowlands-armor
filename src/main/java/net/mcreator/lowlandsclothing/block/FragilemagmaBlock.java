@@ -1,21 +1,7 @@
 
 package net.mcreator.lowlandsclothing.block;
 
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.lowlandsclothing.procedures.FragilemagmaPlayerStartsToDestroyProcedure;
-import net.mcreator.lowlandsclothing.procedures.FragilemagmaOnTickUpdateProcedure;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class FragilemagmaBlock extends Block {
 	public FragilemagmaBlock() {
@@ -46,19 +32,19 @@ public class FragilemagmaBlock extends Block {
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		FragilemagmaPlayerStartsToDestroyProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		FragilemagmaPlayerStartsToDestroyProcedure.execute();
 		return retval;
 	}
 
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		FragilemagmaPlayerStartsToDestroyProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		FragilemagmaPlayerStartsToDestroyProcedure.execute();
 	}
 
 	@Override
 	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
 		super.attack(blockstate, world, pos, entity);
-		FragilemagmaPlayerStartsToDestroyProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		FragilemagmaPlayerStartsToDestroyProcedure.execute();
 	}
 }

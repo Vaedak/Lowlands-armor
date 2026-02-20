@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:depth_scaphander_chestplate",
+    "lowlands_clothing:bret_clothes_chestplate",
+    "lowlands_clothing:bret_corsair_armor_chestplate",
     "lowlands_clothing:maskerade_armor_chestplate",
     "lowlands_clothing:wald_knight_armor_chestplate",
     "lowlands_clothing:norsian_armor_chestplate",

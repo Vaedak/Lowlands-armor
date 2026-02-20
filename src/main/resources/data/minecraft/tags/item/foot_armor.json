@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:depth_scaphander_boots",
+    "lowlands_clothing:bret_clothes_boots",
+    "lowlands_clothing:bret_corsair_armor_boots",
     "lowlands_clothing:maskerade_armor_boots",
     "lowlands_clothing:wald_knight_armor_boots",
     "lowlands_clothing:norsian_armor_boots",

@@ -94,6 +94,10 @@ public class LowlandsClothingModTabs {
 				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_CHESTPLATE.get());
 				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_LEGGINGS.get());
 				tabData.accept(LowlandsClothingModItems.DEPTH_SCAPHANDER_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_BOOTS.get());
 				tabData.accept(LowlandsClothingModItems.NETHERBORN_PIRATE_HELMET.get());
 				tabData.accept(LowlandsClothingModItems.NETHERBORN_PIRATE_CHESTPLATE.get());
 				tabData.accept(LowlandsClothingModItems.NETHERBORN_PIRATE_LEGGINGS.get());
@@ -101,10 +105,6 @@ public class LowlandsClothingModTabs {
 				tabData.accept(LowlandsClothingModItems.SWAMPLAND_FOLKS_ATTIRES_HELMET.get());
 				tabData.accept(LowlandsClothingModItems.SWAMPLAND_FOLKS_ATTIRES_CHESTPLATE.get());
 				tabData.accept(LowlandsClothingModItems.SWAMPLAND_FOLKS_ATTIRES_LEGGINGS.get());
-				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_HELMET.get());
-				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_CHESTPLATE.get());
-				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_LEGGINGS.get());
-				tabData.accept(LowlandsClothingModItems.GAMEKEEPER_ATTIRES_BOOTS.get());
 			})
 
 			.build());
@@ -123,11 +123,11 @@ public class LowlandsClothingModTabs {
 			tabData.accept(LowlandsClothingModItems.TREATEDLEATHER.get());
 			tabData.accept(LowlandsClothingModItems.AXOLOTLIRON.get());
 			tabData.accept(LowlandsClothingModItems.SEA_UPGRADE_TEMPLATE.get());
-			tabData.accept(LowlandsClothingModItems.WOOLEN_FABRIC.get());
-			tabData.accept(LowlandsClothingModItems.QUALITY_PLANT_FIBERS.get());
+			tabData.accept(LowlandsClothingModItems.WETLANDS_FABRIC.get());
 			tabData.accept(LowlandsClothingModItems.LACED_WOOLEN_FABRIC.get());
 			tabData.accept(LowlandsClothingModItems.SLIMY_FIBERS.get());
-			tabData.accept(LowlandsClothingModItems.WETLANDS_FABRIC.get());
+			tabData.accept(LowlandsClothingModItems.QUALITY_PLANT_FIBERS.get());
+			tabData.accept(LowlandsClothingModItems.WOOLEN_FABRIC.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
