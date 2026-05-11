@@ -1,0 +1,109 @@
+{
+  "_fv": 69,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "siege_helmet",
+    "enableBody": true,
+    "textureBody": "siege_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "siege_leggings",
+    "enableBoots": true,
+    "textureBoots": "siege_boots",
+    "onBodyTick": {
+      "name": "Siegearmoreffect"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ArmorsoftheLowlands"
+      }
+    ],
+    "armorTextureFile": "siege_armor",
+    "helmetName": "Siege Armor Helmet",
+    "bodyName": "Siege Armor Chestplate",
+    "leggingsName": "Siege Armor Leggings",
+    "bootsName": "Siege Armor Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Grants Regeneration, Resistance and Slowness when life is low ."
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelSiegeArmorv4",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelSiegeArmorv4",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "ModelSiegeArmorv4",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "ModelSiegeArmorv4",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 37,
+    "damageValueHelmet": 3,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 5,
+    "toughness": 1.0,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

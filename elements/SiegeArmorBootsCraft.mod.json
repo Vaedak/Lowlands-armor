@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:IronSmithingTemplate"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:HeavyIronIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.IRON_BOOTS"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:SiegeArmor.boots"
+    },
+    "name": "siege_armor_boots_craft",
+    "namespace": "mod"
+  }
+}

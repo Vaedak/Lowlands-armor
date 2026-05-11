@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "lowlands_clothing:blacksmith_hammer"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:rough_heavy_iron_ingots",
+    "count": 1
+  }
+}

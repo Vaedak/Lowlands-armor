@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": "CUSTOM:Treatedleather"
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      },
+      {
+        "value": "CUSTOM:Treatedleather"
+      },
+      {
+        "value": "CUSTOM:WoolenFabric"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GatesentryArmor.body"
+    },
+    "name": "gatesentrychestplatecraft",
+    "namespace": "mod"
+  }
+}

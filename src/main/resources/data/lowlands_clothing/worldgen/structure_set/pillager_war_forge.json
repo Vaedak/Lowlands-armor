@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "lowlands_clothing:pillager_war_forge",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 38,
+    "separation": 22,
+    "salt": 1049758970
+  }
+}

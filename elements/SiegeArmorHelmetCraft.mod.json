@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:IronSmithingTemplate"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:HeavyIronIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.IRON_HELMET"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:SiegeArmor.helmet"
+    },
+    "name": "siege_armor_helmet_craft",
+    "namespace": "mod"
+  }
+}

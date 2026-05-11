@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:gatesentry_armor_helmet",
+    "lowlands_clothing:siege_armor_helmet",
+    "lowlands_clothing:swampland_folks_attires_helmet",
+    "lowlands_clothing:netherborn_pirate_helmet",
+    "lowlands_clothing:gamekeeper_attires_helmet",
+    "lowlands_clothing:depth_scaphander_helmet",
+    "lowlands_clothing:bret_clothes_helmet",
+    "lowlands_clothing:bret_corsair_armor_helmet",
     "lowlands_clothing:maskerade_armor_helmet",
     "lowlands_clothing:wald_knight_armor_helmet",
     "lowlands_clothing:norsian_armor_helmet",

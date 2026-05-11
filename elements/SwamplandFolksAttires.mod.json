@@ -22,7 +22,7 @@
     "helmetName": "Swamplandfolks Mask",
     "bodyName": "Swamplandfolks Jacket",
     "leggingsName": "Swamplandfolks Pants",
-    "bootsName": "Swamplandfolks Attires",
+    "bootsName": "",
     "helmetSpecialInformation": {
       "fixedValue": []
     },
@@ -49,9 +49,9 @@
     "leggingsModelPartL": "LeftLeg",
     "leggingsModelPartR": "RightLeg",
     "leggingsModelTexture": "From armor",
-    "bootsModelName": "Modelratcatcher_armor",
-    "bootsModelPartL": "LeftLeg",
-    "bootsModelPartR": "RightLeg",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",

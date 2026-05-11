@@ -105,6 +105,14 @@ public class LowlandsClothingModTabs {
 				tabData.accept(LowlandsClothingModItems.SWAMPLAND_FOLKS_ATTIRES_HELMET.get());
 				tabData.accept(LowlandsClothingModItems.SWAMPLAND_FOLKS_ATTIRES_CHESTPLATE.get());
 				tabData.accept(LowlandsClothingModItems.SWAMPLAND_FOLKS_ATTIRES_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.SIEGE_ARMOR_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.SIEGE_ARMOR_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.SIEGE_ARMOR_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.SIEGE_ARMOR_BOOTS.get());
+				tabData.accept(LowlandsClothingModItems.GATESENTRY_ARMOR_HELMET.get());
+				tabData.accept(LowlandsClothingModItems.GATESENTRY_ARMOR_CHESTPLATE.get());
+				tabData.accept(LowlandsClothingModItems.GATESENTRY_ARMOR_LEGGINGS.get());
+				tabData.accept(LowlandsClothingModItems.GATESENTRY_ARMOR_BOOTS.get());
 			})
 
 			.build());
@@ -128,11 +136,15 @@ public class LowlandsClothingModTabs {
 			tabData.accept(LowlandsClothingModItems.SLIMY_FIBERS.get());
 			tabData.accept(LowlandsClothingModItems.QUALITY_PLANT_FIBERS.get());
 			tabData.accept(LowlandsClothingModItems.WOOLEN_FABRIC.get());
+			tabData.accept(LowlandsClothingModItems.ROUGH_HEAVY_IRON_INGOTS.get());
+			tabData.accept(LowlandsClothingModItems.HEAVY_IRON_INGOT.get());
+			tabData.accept(LowlandsClothingModItems.IRON_SMITHING_TEMPLATE.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(LowlandsClothingModItems.HERBS_WHIP.get());
 			tabData.accept(LowlandsClothingModItems.NEEDLE_AND_STRING.get());
+			tabData.accept(LowlandsClothingModItems.BLACKSMITH_HAMMER.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "lowlands_clothing:woolen_fabric"
+    },
+    "c": {
+      "item": "lowlands_clothing:treatedleather"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:gatesentry_armor_chestplate",
+    "count": 1
+  }
+}

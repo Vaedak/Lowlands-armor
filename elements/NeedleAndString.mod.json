@@ -18,14 +18,14 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 15,
+    "damageCount": 5,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
+    "damageOnCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {

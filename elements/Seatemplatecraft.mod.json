@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "CUSTOM:SeaUpgradeTemplate"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.KELP"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SeaUpgradeTemplate"
+    },
+    "name": "seatemplatecraft",
+    "namespace": "mod"
+  }
+}

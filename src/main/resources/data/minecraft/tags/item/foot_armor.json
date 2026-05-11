@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:gatesentry_armor_boots",
+    "lowlands_clothing:siege_armor_boots",
+    "lowlands_clothing:netherborn_pirate_boots",
+    "lowlands_clothing:gamekeeper_attires_boots",
     "lowlands_clothing:depth_scaphander_boots",
     "lowlands_clothing:bret_clothes_boots",
     "lowlands_clothing:bret_corsair_armor_boots",

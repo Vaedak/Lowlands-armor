@@ -3,10 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
+      "item": "minecraft:stick"
+    },
+    {
       "tag": "minecraft:wool"
     },
     {
-      "item": "minecraft:shears"
+      "item": "minecraft:stick"
     }
   ],
   "result": {

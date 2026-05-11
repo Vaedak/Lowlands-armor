@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0,
+    "cookingTime": 600,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:RoughHeaveIronIngots"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:HeavyIronIngot"
+    },
+    "name": "heavy_iron_smelting",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:kelp"
+    },
+    "b": {
+      "item": "lowlands_clothing:sea_upgrade_template"
+    },
+    "c": {
+      "item": "minecraft:prismarine"
+    }
+  },
+  "result": {
+    "item": "lowlands_clothing:sea_upgrade_template",
+    "count": 2
+  }
+}

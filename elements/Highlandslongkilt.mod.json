@@ -18,7 +18,7 @@
     "armorTextureFile": "highlands_suitb",
     "helmetName": "Highlander Hat",
     "bodyName": "Highlander Tunic",
-    "leggingsName": "Highlander Kilt",
+    "leggingsName": "",
     "bootsName": "Highlander Boots",
     "helmetSpecialInformation": {
       "fixedValue": []
@@ -40,10 +40,10 @@
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
     "bodyModelTexture": "From armor",
-    "leggingsModelName": "ModelHighlands_longkilt",
-    "leggingsModelPartL": "LeftLeg",
-    "leggingsModelPartR": "RightLeg",
-    "leggingsModelTexture": "highlands_suit_layer_2.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
     "bootsModelName": "ModelHighlands_longkilt",
     "bootsModelPartL": "LeftLeg",
     "bootsModelPartR": "RightLeg",

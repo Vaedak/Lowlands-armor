@@ -60,7 +60,7 @@ public class GrizzlyBearEntity extends TamableAnimal {
 	public GrizzlyBearEntity(EntityType<GrizzlyBearEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(1.5f);
-		xpReward = 3;
+		xpReward = 4;
 		setNoAi(false);
 		refreshDimensions();
 	}
@@ -73,7 +73,7 @@ public class GrizzlyBearEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0.9, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
@@ -190,12 +190,12 @@ public class GrizzlyBearEntity extends TamableAnimal {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.5);
-		builder = builder.add(Attributes.MAX_HEALTH, 30);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 25);
 		builder = builder.add(Attributes.ARMOR, 0.2);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 9);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 4);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 4);
 		return builder;
 	}

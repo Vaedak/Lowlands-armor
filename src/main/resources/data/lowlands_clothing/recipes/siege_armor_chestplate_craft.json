@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "base": {
+    "item": "lowlands_clothing:iron_smithing_template"
+  },
+  "addition": {
+    "item": "lowlands_clothing:heavy_iron_ingot"
+  },
+  "result": {
+    "item": "lowlands_clothing:siege_armor_chestplate"
+  }
+}

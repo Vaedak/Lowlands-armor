@@ -6,6 +6,6 @@ import net.minecraft.world.item.Item;
 
 public class NeedleAndStringItem extends Item {
 	public NeedleAndStringItem() {
-		super(new Item.Properties().durability(15).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(5).rarity(Rarity.COMMON));
 	}
 }

@@ -1,0 +1,109 @@
+{
+  "_fv": 69,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gatekeeper_helmet",
+    "enableBody": true,
+    "textureBody": "gatekeeper_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "gatekeeper_leggings",
+    "enableBoots": true,
+    "textureBoots": "gatekeeper_boots",
+    "onBodyTick": {
+      "name": "Gatekeeperarmoreffect"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ArmorsoftheLowlands"
+      }
+    ],
+    "armorTextureFile": "gatekeeperarmorb",
+    "helmetName": "Gate Sentry Helmet",
+    "bodyName": "Gate Sentry Chestplate",
+    "leggingsName": "Gate Sentry Pants",
+    "bootsName": "Gate Sentry Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "Grants Resistance when holding a lantern in main or off hand ."
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelGatekeeper_corrected",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelGatekeeper_corrected",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "ModelGatekeeper_corrected",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "ModelGatekeeper_corrected",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.5,
+    "knockbackResistance": 0.19999999999999998,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

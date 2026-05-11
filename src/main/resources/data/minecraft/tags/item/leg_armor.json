@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "lowlands_clothing:gatesentry_armor_leggings",
+    "lowlands_clothing:siege_armor_leggings",
+    "lowlands_clothing:swampland_folks_attires_leggings",
+    "lowlands_clothing:netherborn_pirate_leggings",
+    "lowlands_clothing:gamekeeper_attires_leggings",
     "lowlands_clothing:depth_scaphander_leggings",
     "lowlands_clothing:bret_clothes_leggings",
     "lowlands_clothing:bret_corsair_armor_leggings",
@@ -11,7 +16,6 @@
     "lowlands_clothing:wingedcavaleryarmor_leggings",
     "lowlands_clothing:penitent_rags_leggings",
     "lowlands_clothing:plague_doctor_suit_leggings",
-    "lowlands_clothing:highlandslongkilt_leggings",
     "lowlands_clothing:furnacemasteramor_leggings",
     "lowlands_clothing:executorarmor_leggings",
     "lowlands_clothing:ratcatcherrobes_leggings",
